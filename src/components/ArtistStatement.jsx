@@ -1,31 +1,15 @@
 import React, { Component } from 'react'
 import '../App.css'
-import {Link} from 'react-router-dom';
 
 
 export default class Modal extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      displayModal: true
-    }
-
-    this.handleClick = this.handleClick.bind(this)
-  }
-
-  handleClick() {
-    this.setState({
-      displayModal: false
-    })
-    console.log("it clicked")
-  }
-
-
-
   render() {
+
+  //conditionally rendering the artist statement
     return (
-      <div className="artist-statement-modal">
+      <>
+     
+      <div className={this.props.displayArtistStatement === true ? "display-artist-statement" : "close-artist-statement"}>
       <h1> Project Title </h1>
       <h2> Ximena Izquierdo </h2>
       <p>
@@ -33,10 +17,10 @@ export default class Modal extends Component {
 
         Cough hairball on conveniently placed pants kitty scratches couch bad kitty cats making all the muffins for swipe at owner's legs. I want to go outside let me go outside nevermind inside is better 𝕄𝔼𝕆𝕎 but cry louder at reflection, hopped up on catnip, for tuxedo cats always looking dapper and pelt around the house and up and down stairs chasing phantoms. Kick up litter walk on a keyboard yet friends are not food, yet caticus cuteicus paw at beetle and eat it before it gets away or mice find a way to fit in tiny box. Really likes hummus slap the dog because cats rule plays league of legends purrrrrr good morning sunshine so good now the other hand, too. Lick plastic bags i heard this rumor where the humans are our owners, pfft, what do they know?! catch mouse and gave it as a present for pretend you want to go out but then don't allways wanting food but steal mom's crouton while she is in the bathroom or loved it, hated it, loved it, hated it. Thinking longingly about tuna brine eat an easter feather as if it were a bird then burp victoriously, but tender, for purr as loud as possible, be the most annoying cat that you can, and, knock everything off the table chirp at birds for scoot butt on the rug nyan fluffness ahh cucumber!. Jumps off balcony gives owner dead mouse at present then poops in litter box snatches yarn and fights with dog cat chases laser then plays in grass finds tiny spot in cupboard and sleeps all day jumps in bathtub and meows when owner fills food dish the cat knocks over the food dish cat slides down the water slide and into pool and swims even though it does not like water make plans to dominate world and then take a nap attack the dog then pretend like nothing happened. Pounce on unsuspecting person paw at beetle and eat it before it gets away.
       </p>
-      <Link to="/gallery">
-        <button id="btn-icon" > ⇨ </button>
-      </Link>
-    </div>
+
+      <button id="btn-icon" onClick={this.props.handleArtistStatement} > ⇨ </button>
+    </div> 
+    </>
     )
   }
 }
