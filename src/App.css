@@ -1,9 +1,13 @@
 .landing-page {
   text-align: center;
 }
-.artist-statement-modal {
+.display-artist-statement {
   border: 2px solid black;
   padding: 2em;
+}
+
+.close-artist-statement {
+  display: none;
 }
 
 #btn-icon {
