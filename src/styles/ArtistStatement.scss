@@ -1,0 +1,66 @@
+@import './Fonts.scss';
+
+body {
+  background-color: white;
+  font-family: Atlas-Grotesk;
+}
+
+// modal transition
+@keyframes openModal {
+  from {
+    position: absolute;
+    right: -90%;
+    opacity: 0;
+    // background-color: salmon;
+  }
+  to {
+    position: absolute;
+    opacity: 1;
+    right: 0%;
+  }
+}
+
+// .display-artist-statement {
+//   border: 2px solid black;
+//   padding: 2em;
+//   width: 100% !important;
+//   height: 100% !important;
+//   position: absolute;
+//   z-index: 100;
+//   background-color: white;
+// }
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+  position: absolute;
+  z-index: -99;
+}
+
+.open-artist-statement {
+  position: relative;
+  visibility: visible;
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  z-index: 100;
+  background-color: white;
+  animation: openModal 1s ease;
+}
+
+.close-artist-statement {
+  transform: translate(120vw);
+  visibility: hidden;
+  transition: visibility 7s step-end,transform 7s ease-out, -webkit-transform 7s ease;
+}
+
+#btn-icon {
+  font-size: 40px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: #C2E5F2;
+}

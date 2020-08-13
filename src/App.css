@@ -1,15 +1,16 @@
-.landing-page {
-  text-align: center;
-}
+/* @import "~bootstrap/scss/bootstrap"; */
+
 .display-artist-statement {
-  border: 2px solid black;
+  border: 10px solid black;
   padding: 2em;
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  z-index: 100;
+  color: red;
 }
 
-.close-artist-statement {
-  display: none;
+.display-artist-statement  > h1 {
+  color: purple;
 }
 
-#btn-icon {
-  font-size: 40px;
-}
