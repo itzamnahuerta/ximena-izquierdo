@@ -1,11 +1,11 @@
 import React from 'react';
 import '../styles/Gallery.scss'
-import ArtistStatement from '../components/ArtistStatement'
+import ArtistStatement from './ArtistStatement'
 
 
 // https://stackoverflow.com/questions/50490304/how-to-make-audio-autoplay-on-chrome // for autoplay audio
 
-class Gallery extends React.Component {
+class Main extends React.Component {
   constructor(props) {
     super(props);
     this.contentTitles = ["hello","goodbye"];
@@ -66,4 +66,4 @@ class Gallery extends React.Component {
     }
 }
 
-export default Gallery;
+export default Main;

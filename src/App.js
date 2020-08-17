@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
-import Gallery from './components/Gallery';
+import Main from './components/Main';
 import LandingPage from './components/LandingPage';
 
 export default class App extends Component {
@@ -33,7 +33,7 @@ export default class App extends Component {
       }
       return (
         <div className="App">
-              <Gallery  />
+              <Main  />
         </div>
     )
   }
