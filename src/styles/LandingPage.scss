@@ -1,7 +1,7 @@
 @import './Fonts.scss';
 
 body {
-  font-family: Atlas-Grotesk;
+  // font-family: Atlas-Grotesk;
   overflow-y: hidden; /* Hide vertical scrollbar */
   overflow-x: hidden; 
 
@@ -15,15 +15,15 @@ body {
 }
 
 h1 {
-  font-family: Atlas-Grotesk;
+  font-family: Whyte-Inktrap-Medium;
   text-transform: lowercase;
   font-size: 4em;
   margin-top: -0.5em;
 }
 
 .flex-container > button {
-  color: white;
-  background-color: #7BC6F4;
+  color: black;
+  background-color: white;
   border: none;
 }
 
@@ -76,15 +76,31 @@ h1 {
   }
 }
 
+.parent-container {
+  border: 10px solid black;
+  display: flex;
+  justify-content: center;
+}
+
 .flex-container {
-  background-color: #7BC6F4;
-  color: white;
+  background-color: white;
+  color: black;
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  max-width: 80%;
+  // border: 2px solid red;
   padding: 2em;
+}
+
+.commision-desc {
+  font-family: Whyte-Inktrap-Medium;
+}
+
+p {
+  font-family: Univers-Next-Regular;
 }
 
 .fade-in{

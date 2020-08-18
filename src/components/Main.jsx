@@ -1,7 +1,7 @@
 import React from 'react';
-import '../styles/Gallery.scss'
-import ArtistStatement from './ArtistStatement'
-
+import '../styles/Main.scss';
+import ArtistStatement from './ArtistStatement';
+import Gallery from './Gallery';
 
 // https://stackoverflow.com/questions/50490304/how-to-make-audio-autoplay-on-chrome // for autoplay audio
 
@@ -47,7 +47,7 @@ class Main extends React.Component {
       return (
         <div>
           <header className="gallery-header"> 
-              <div className="gallery-title">  
+              {/* <div className="gallery-title">  
                 {this.contentTitles.map((item, id) => (
                   <span 
                     key={item}
@@ -56,10 +56,11 @@ class Main extends React.Component {
                     {item} 
                   </span>
                 ))}
-              </div>
+              </div> */}
 
               <div className="artist-statement-header" onClick={this.handleArtistStatement}> Artist Statement</div>
           </header>
+          <Gallery />
         </div>
       )
     }
