@@ -1,4 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component, Suspense } from 'react';
+import ReactImageAppear from 'react-image-appear';
+
 import '../styles/Gallery.scss'
 import data from '../assets/data/data';
 
@@ -7,7 +9,7 @@ export default class Gallery extends Component {
     super();
 
     this.state = {
-      data: data
+      data: data,
     }
   }
 
@@ -16,16 +18,29 @@ export default class Gallery extends Component {
   render() {
     let renderPhotos = () => {
       let photos = this.state.data;
-      return photos.map((photo, id) => (
-        <div key={id} className="photo-card" >
-          <img src={photo.imgUrl}/>
-        </div> 
-      ));
+
+      return photos.map((photo, id) => {
+        
+          return (
+
+            <div key={id} className={photo.className} >
+              
+              <ReactImageAppear 
+              src={photo.imgUrl}
+              animation="fadeIn"
+              animationDuration="1s"
+              showLoader={false}
+              />
+
+            </div> 
+          )
+      });
     }
+    
   
     return (
 
-      <div className="gallery-container">
+      <div className="gallery-parent-container">
         {renderPhotos()}
       </div>
 
