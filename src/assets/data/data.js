@@ -1,7 +1,7 @@
 const data = [
 	{
     portrait: 'Midrene with roses',
-    className="c-1",
+    className:"c-1",
 		location: 'Brooklyn, New York',
 		date: 'December, 2017',
 		imgUrl:
@@ -13,7 +13,7 @@ const data = [
 	},
 	{
     portrait: 'Nancy before libre',
-    className="c2-r1",
+    className:"c2-r1",
 		location: 'Brooklyn, New York',
 		date: 'November, 2019',
 		imgUrl:
@@ -27,7 +27,7 @@ const data = [
 	},
 	{
     portrait: 'Jess and Lolu in the morning',
-    className="c2-r2",
+    className:"c2-r2",
 		location: 'Brooklyn, New York',
 		date: 'September, 2019',
 		imgUrl:
@@ -39,7 +39,7 @@ const data = [
 	},
 	{
     portrait: "Omololu's first time at Riis",
-    className="c3-r1",
+    className:"c3-r1",
 		location: 'Queens, New York',
 		date: 'July, 2019',
 		imgUrl:
@@ -57,7 +57,7 @@ const data = [
 	},
 	{
     portrait: 'Seraah between the Matriarchs',
-    className="c3-r2",
+    className:"c3-r2",
 		location: 'Boston, Massachusetts',
 		date: 'November, 2010',
 		imgUrl:
@@ -68,7 +68,7 @@ const data = [
 	},
 	{
 		portrait: 'Andi after the Protest',
-    className="c4-r1",
+    className:"c4-r1",
 		location: 'Brooklyn, New York',
 		date: 'November, 2019',
 		imgUrl:
@@ -79,7 +79,7 @@ const data = [
 	},
 	{
     portrait: 'Wendarlene at the family photoshoot',
-    className="c4-r2",
+    className:"c4-r2",
 		location: 'Brooklyn, New York',
 		date: 'November, 2019',
 		imgUrl:
@@ -116,7 +116,7 @@ const data = [
 	},
 	{
     portrait: 'Karen y periodico',
-    className="c5-r1",
+    className:"c5-r1",
 		location: 'Lince, Lima',
 		date: 'June, 2019',
 		imgUrl:
@@ -127,7 +127,7 @@ const data = [
 	},
 	{
     portrait: 'Alfie in the corset',
-    className="c5-r2",
+    className:"c5-r2",
 		location: 'Brooklyn, New York',
 		date: 'March, 2019',
 		imgUrl:
@@ -139,7 +139,7 @@ const data = [
 	},
 	{
     portrait: 'Zion in Chinatown',
-    className="c6-r1",
+    className:"c6-r1",
 		location: 'Mahanttan, New York',
 		date: 'December, 2019',
 		imgUrl:
@@ -150,7 +150,7 @@ const data = [
 	},
 	{
     portrait: 'Vianca overlooking the city',
-    className="c6-r2",
+    className:"c6-r2",
 		location: 'Brooklyn, New York',
 		date: 'November, 2019',
 		imgUrl:
@@ -165,7 +165,7 @@ const data = [
 	},
 	{
     portrait: 'Prince reaching Lima',
-    className="c7-r1",
+    className:"c7-r1",
 		location: 'Magdalena del Mar, Lima',
 		date: 'April, 2020',
 		imgUrl:
@@ -175,7 +175,7 @@ const data = [
 	},
 	{
     portrait: 'Cristobal as Buffy on Halloween',
-    className="c7-r2",
+    className:"c7-r2",
 		location: "Brooklyn, New York",
 		date: 'October, 2019',
 		imgUrl:
@@ -199,7 +199,7 @@ const data = [
 	},
 	{
     portrait: 'Iyabo on the night of her performance',
-    className="c8",
+    className:"c8",
 		location: 'Brooklyn, New York',
 		date: 'September, 2019',
 		imgUrl:
@@ -211,7 +211,7 @@ const data = [
 	},
 	{
     portrait: 'Sandra en naranja',
-    className="c9-r1",
+    className:"c9-r1",
 		location: 'Magdalena del Mar, Lima',
 		date: 'March, 2020',
 		imgUrl:
@@ -228,7 +228,7 @@ const data = [
 	},
 	{
     portrait: 'Fudge at her shoot',
-    className="c9-r2",
+    className:"c9-r2",
 		location: 'Brooklyn, New York',
 		date: 'April, 2019',
 		imgUrl:
@@ -250,7 +250,7 @@ const data = [
 	},
 	{
     portrait: 'Keioui Peanut Stew',
-    className="c9-r3",
+    className:"c9-r3",
 		location: 'Brooklyn, New York',
 		date: 'November, 2018',
 		imgUrl:
@@ -262,7 +262,7 @@ const data = [
 	},
 	{
     portrait: 'Pedro con abanico despues de bailar',
-    className="c10-r1",
+    className:"c10-r1",
 		location: 'Callao, Lima',
 		date: 'February, 2020',
 		imgUrl:
@@ -286,7 +286,7 @@ const data = [
 	},
 	{
     portrait: 'Pao at the Tropicuir Fundraiser',
-    className="c10-r2",
+    className:"c10-r2",
 		location: 'Brooklyn, New York',
 		date: 'November, 2019',
 		imgUrl:
@@ -298,7 +298,7 @@ const data = [
 	},
 	{
     portrait: 'Stefa after the protest before the art gala',
-    className="c11-r1",
+    className:"c11-r1",
 		location: 'Brooklyn, New York',
 		date: 'November, 2019',
 		imgUrl:
@@ -310,7 +310,7 @@ const data = [
 	},
 	{
     portrait: 'Naila Mami on the roof',
-    className="c11-r2",
+    className:"c11-r2",
 		location: "Brooklyn, New York",
 		date: 'March, 2019',
 		imgUrl:
@@ -338,7 +338,7 @@ const data = [
 	},
 	{
     portrait: 'Sonny at his temporary home',
-    className="c12-r1",
+    className:"c12-r1",
 		location: 'Brooklyn, New York',
 		date: 'January, 2019',
 		imgUrl:
@@ -351,7 +351,7 @@ const data = [
 	},
 	{
     portrait: 'Zion in blue',
-    className="c12-r2",
+    className:"c12-r2",
 		location: 'Harlem, New York',
 		date: 'January, 2020',
 		imgUrl:
@@ -362,7 +362,7 @@ const data = [
 	},
 	{
     portrait: 'Nitty in Burgundy',
-    className="c13-r1",
+    className:"c13-r1",
 		location: 'Washington D.C.',
 		date: 'December, 2019',
 		imgUrl:
@@ -374,7 +374,7 @@ const data = [
 	},
 	{
     portrait: 'Sandra at the window',
-    className="c13-r2",
+    className:"c13-r2",
 		location: 'Magdalena del Mar, Lima',
 		date: 'March, 2020',
 		imgUrl:
@@ -386,7 +386,7 @@ const data = [
 	},
 	{
     portrait: 'Nancy cigarette Cherry Clove',
-    className="c14",
+    className:"c14",
 		location: 'Fire Island, New York',
 		date: 'May, 2019',
 		imgUrl:
@@ -403,7 +403,7 @@ const data = [
 	},
 	{
     portrait: 'Edua after their performance',
-    className="c15-r1",
+    className:"c15-r1",
 		location: "Queens, New York",
 		date: 'March 2019',
 		imgUrl:
@@ -436,7 +436,7 @@ const data = [
 	},
 	{
     portrait: 'Keioui & the Sea',
-    className="c15-r2",
+    className:"c15-r2",
 		location: 'Fire Island',
 		date: 'May, 2019',
 		imgUrl:
@@ -448,7 +448,7 @@ const data = [
 	},
 	{
     portrait: 'Lolu smoke break',
-    className="c16-r1",
+    className:"c16-r1",
 		location: 'Brooklyn, New York',
 		date: 'December, 2019',
 		imgUrl:
@@ -471,7 +471,7 @@ const data = [
 	},
 	{
     portrait: "Domingo's new home",
-    className="c16-r2",
+    className:"c16-r2",
 		location: "Miami, Florida",
 		date: 'January, 2020',
 		imgUrl:
@@ -483,7 +483,7 @@ const data = [
 	},
 	{
     portrait: 'Andi on the couch',
-    className="c17-r1",
+    className:"c17-r1",
 		location: 'Punta Negra, Lima',
 		date: 'March, 2020',
 		imgUrl:
@@ -494,7 +494,7 @@ const data = [
 	},
 	{
     portrait: 'Jess and Ocean on my purple sheets',
-    className="c17-r2",
+    className:"c17-r2",
 		location: 'Brooklyn, New York',
 		date: 'November, 2019',
 		imgUrl:
@@ -506,7 +506,7 @@ const data = [
 
 	{
     portrait: 'Akir with Roses for Pink Bandanazz',
-    className="c18-r1",
+    className:"c18-r1",
 		className: 'child dogwhisperer',
 		location: 'Brooklyn, New York',
 		date: 'April, 2019',
@@ -518,7 +518,7 @@ const data = [
   },
   {
   portrait: "Julio in my hoops",
-  className="c18-r2",
+  className:"c18-r2",
   location: "Lima",
   date: "May, 2020",
   imgUrl: "https://res.cloudinary.com/canelaconpan/image/upload/v1597544583/xime/Julio_in_my_hoops_Lima_May_2020_urzhcv.png",
@@ -527,7 +527,7 @@ const data = [
   },
 	{
     portrait: 'Sofia en el techo',
-    className="c19-r1",
+    className:"c19-r1",
 		location: 'Brooklyn, New York',
 		date: 'June, 2019',
 		imgUrl:
@@ -550,7 +550,7 @@ const data = [
 	},
 	{
     portrait: 'Vianca as Rue',
-    className="c19-r2",
+    className:"c19-r2",
 		location: 'Brooklyn, New York',
 		date: 'October, 2019',
 		imgUrl:
@@ -561,7 +561,7 @@ const data = [
 	},
 	{
     portrait: 'Zion in Chinatown',
-    className="c19-r3",
+    className:"c19-r3",
 		location: 'Mahanttan, New York',
 		date: 'December, 2019',
 		imgUrl:
@@ -572,7 +572,7 @@ const data = [
 	},
 	{
     portrait: 'Oscar red nails',
-    className="c20-r1",
+    className:"c20-r1",
 		location: 'Brooklyn, New York',
 		date: 'March, 2019',
 		imgUrl:
@@ -606,7 +606,7 @@ const data = [
 	},
 	{
     portrait: 'Prince en Cuarentena',
-    className="c20-r2",
+    className:"c20-r2",
 		location: 'Magdalena del Mar, Lima',
 		date: 'April, 2020',
 		imgUrl:
@@ -618,7 +618,7 @@ const data = [
 	},
 	{
     portrait: 'Midrene the night we all wore berets to the bar',
-    className="c21-r1",
+    className:"c21-r1",
 		location: 'Brooklyn, New York',
 		date: 'February, 2018',
 		imgUrl:
@@ -630,7 +630,7 @@ const data = [
 	},
 	{
     portrait: 'Maria al lado de su casa de nina',
-    className="c21-r2",
+    className:"c21-r2",
 		location: 'El Carmen, Ica',
 		date: 'February, 2020',
 		imgUrl:
@@ -642,7 +642,7 @@ const data = [
 	},
 	{
     portrait: 'Nani at the Lotus Club Reunion',
-    className="c22",
+    className:"c22",
 		location: 'Washington D.C.',
 		date: 'December, 2019',
 		imgUrl:
