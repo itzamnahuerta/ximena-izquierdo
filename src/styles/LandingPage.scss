@@ -1,5 +1,33 @@
 @import './Fonts.scss';
 
+
+@keyframes animateToRight {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+ }
+
+ @-moz-keyframes animateToRight {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes animateToRight {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
 body {
   // font-family: Atlas-Grotesk;
   overflow-y: hidden; /* Hide vertical scrollbar */
@@ -25,6 +53,16 @@ h1 {
   color: black;
   background-color: white;
   border: none;
+}
+
+*:focus {
+  outline: 0 !important;
+}
+
+svg:hover {
+  fill: gray;
+
+
 }
 
 .flex-container > p {
