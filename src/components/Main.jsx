@@ -8,26 +8,23 @@ import Gallery from './Gallery';
 class Main extends React.Component {
   constructor(props) {
     super(props);
-    this.contentTitles = ["hello","goodbye"];
 
     this.state = {
       isArtistStatementClicked: false,
-      currentTitle: 0
+      currentTitle: "Se Que Fue Así Porque Estuve Allí"
     }
   }
 
-  changeGalleryTitle = () => {
+
+  componentDidMount(){
     setInterval(() => {
-      this.setState(state => ({
-        ...state,
-        currentTitle: (state.currentTitle + 1) % this.contentTitles.length
-      }));
-    }, 500);
-    // console.log((this.state.currentTitle + 1) % this.contentTitles.length)
-
+      if(this.state.currentTitle == "Se Que Fue Así Porque Estuve Allí"){
+        this.setState({currentTitle:"Xime"})
+      }else if(this.state.currentTitle == "Xime"){
+        this.setState({currentTitle:"Se Que Fue Así Porque Estuve Allí"})
+      }
+    }, 1000);
   }
-
-
 
   handleArtistStatement = () => {
     this.setState({isArtistStatementClicked:!this.state.isArtistStatementClicked})
@@ -47,18 +44,10 @@ class Main extends React.Component {
       return (
         <div>
           <header className="gallery-header"> 
-              {/* <div className="gallery-title">  
-                {this.contentTitles.map((item, id) => (
-                  <span 
-                    key={item}
-                    className={id === this.state.currentTitle ? 'select-item active' : 'select-item'}
-                    > 
-                    {item} 
-                  </span>
-                ))}
-              </div> */}
-
-              <div className="artist-statement-header" onClick={this.handleArtistStatement}> Artist Statement</div>
+              <div className="gallery-title">  
+               <span>{this.state.currentTitle}</span>
+              </div>
+              <h3 className="artist-statement-header" onClick={this.handleArtistStatement}> Artist Statement</h3>
           </header>
           <Gallery />
         </div>
