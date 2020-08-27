@@ -1,7 +1,7 @@
 const data = [
 	{
     portrait: 'Midrene with roses',
-    className:"c-1",
+    className:"c1",
 		location: 'Brooklyn, New York',
 		date: 'December, 2017',
 		imgUrl:
@@ -39,7 +39,7 @@ const data = [
 	},
 	{
     portrait: "Omololu's first time at Riis",
-    className:"c3-r1",
+    className:"c3-r2",
 		location: 'Queens, New York',
 		date: 'July, 2019',
 		imgUrl:
@@ -57,7 +57,7 @@ const data = [
 	},
 	{
     portrait: 'Seraah between the Matriarchs',
-    className:"c3-r2",
+    className:"c3-r3",
 		location: 'Boston, Massachusetts',
 		date: 'November, 2010',
 		imgUrl:
@@ -116,7 +116,7 @@ const data = [
 	},
 	{
     portrait: 'Karen y periodico',
-    className:"c5-r1",
+    className:"c5-r2",
 		location: 'Lince, Lima',
 		date: 'June, 2019',
 		imgUrl:
@@ -127,7 +127,7 @@ const data = [
 	},
 	{
     portrait: 'Alfie in the corset',
-    className:"c5-r2",
+    className:"c5-r3",
 		location: 'Brooklyn, New York',
 		date: 'March, 2019',
 		imgUrl:
@@ -165,7 +165,7 @@ const data = [
 	},
 	{
     portrait: 'Prince reaching Lima',
-    className:"c7-r1",
+    className:"c7-r2",
 		location: 'Magdalena del Mar, Lima',
 		date: 'April, 2020',
 		imgUrl:
@@ -175,7 +175,7 @@ const data = [
 	},
 	{
     portrait: 'Cristobal as Buffy on Halloween',
-    className:"c7-r2",
+    className:"c7-r3",
 		location: "Brooklyn, New York",
 		date: 'October, 2019',
 		imgUrl:
@@ -298,7 +298,7 @@ const data = [
 	},
 	{
     portrait: 'Stefa after the protest before the art gala',
-    className:"c11-r1",
+    className:"c11-r2",
 		location: 'Brooklyn, New York',
 		date: 'November, 2019',
 		imgUrl:
@@ -310,7 +310,7 @@ const data = [
 	},
 	{
     portrait: 'Naila Mami on the roof',
-    className:"c11-r2",
+    className:"c11-r3",
 		location: "Brooklyn, New York",
 		date: 'March, 2019',
 		imgUrl:
@@ -362,7 +362,7 @@ const data = [
 	},
 	{
     portrait: 'Nitty in Burgundy',
-    className:"c13-r1",
+    className:"c13-r2",
 		location: 'Washington D.C.',
 		date: 'December, 2019',
 		imgUrl:
@@ -374,7 +374,7 @@ const data = [
 	},
 	{
     portrait: 'Sandra at the window',
-    className:"c13-r2",
+    className:"c13-r3",
 		location: 'Magdalena del Mar, Lima',
 		date: 'March, 2020',
 		imgUrl:
@@ -403,7 +403,7 @@ const data = [
 	},
 	{
     portrait: 'Edua after their performance',
-    className:"c15-r1",
+    className:"c15-r2",
 		location: "Queens, New York",
 		date: 'March 2019',
 		imgUrl:
@@ -436,7 +436,7 @@ const data = [
 	},
 	{
     portrait: 'Keioui & the Sea',
-    className:"c15-r2",
+    className:"c15-r3",
 		location: 'Fire Island',
 		date: 'May, 2019',
 		imgUrl:
@@ -483,7 +483,7 @@ const data = [
 	},
 	{
     portrait: 'Andi on the couch',
-    className:"c17-r1",
+    className:"c17-r2",
 		location: 'Punta Negra, Lima',
 		date: 'March, 2020',
 		imgUrl:
@@ -494,7 +494,7 @@ const data = [
 	},
 	{
     portrait: 'Jess and Ocean on my purple sheets',
-    className:"c17-r2",
+    className:"c17-r3",
 		location: 'Brooklyn, New York',
 		date: 'November, 2019',
 		imgUrl:
@@ -506,7 +506,7 @@ const data = [
 
 	{
     portrait: 'Akir with Roses for Pink Bandanazz',
-    className:"c18-r1",
+    className:"c18-r2",
 		className: 'child dogwhisperer',
 		location: 'Brooklyn, New York',
 		date: 'April, 2019',
@@ -518,7 +518,7 @@ const data = [
   },
   {
   portrait: "Julio in my hoops",
-  className:"c18-r2",
+  className:"c18-r3",
   location: "Lima",
   date: "May, 2020",
   imgUrl: "https://res.cloudinary.com/canelaconpan/image/upload/v1597544583/xime/Julio_in_my_hoops_Lima_May_2020_urzhcv.png",
@@ -572,7 +572,7 @@ const data = [
 	},
 	{
     portrait: 'Oscar red nails',
-    className:"c20-r1",
+    className:"c20-r2",
 		location: 'Brooklyn, New York',
 		date: 'March, 2019',
 		imgUrl:
@@ -606,7 +606,7 @@ const data = [
 	},
 	{
     portrait: 'Prince en Cuarentena',
-    className:"c20-r2",
+    className:"c20-r3",
 		location: 'Magdalena del Mar, Lima',
 		date: 'April, 2020',
 		imgUrl:
@@ -642,7 +642,7 @@ const data = [
 	},
 	{
     portrait: 'Nani at the Lotus Club Reunion',
-    className:"c22",
+    className:"c23",
 		location: 'Washington D.C.',
 		date: 'December, 2019',
 		imgUrl:
