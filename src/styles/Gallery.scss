@@ -1,18 +1,19 @@
 img {
-  // max-width: 25vw;
-  // max-height: 35vw;
   max-width: 100%;
   max-height: 100%;
-  // height: auto;
-  // width: auto; 
-  // padding: 3px;
 }
 
 .gallery-parent-container {
   margin: 0 1em 0;
   display: grid;
-  grid-template-columns: repeat(14, minmax(13%, 25%));
-  grid-template-rows: repeat(3, minmax(250px, 1fr));
+  // grid-template-columns: repeat(14, minmax(13%, 25%));
+  // grid-template-rows: repeat(3, minmax(250px, 1fr));
+  grid-template-areas:  
+  ".   c2-r1     .       c4-r1     .     c6-r1      .      .    c9-r1   c10-r1     .         c12-r1        .       .        .      c16-r1       .         .        c19-r1     c20-r2    c21-r1     .  "
+  "c1  c2-r2   c3-r2     c4-r2   c5-r2   c6-r2    c7-r2    c8   c9-r2   c10-r2     c11-r2    c12-r2     c13-r2    c14    c15-r2    c16-r2    c17-r2     c18-r2     c19-r2     c20-r3    c22-r2     .  "
+  ".     .     c3-r3       .     c5-r3     .      c7-r3    .    c9-r3      .       c11-r3       .       c13-r3     .     c15-r3      .       c17-r3     c18-r3     c19-r3       .          .       c23"
+  ;
+
   grid-gap: 10px;
   border: 4px solid red;
   max-height: 1000px;
@@ -20,28 +21,3 @@ img {
   overflow-y: hidden;
 }
 
-
-// .not-loaded {
-//   border: 8px solid hotpink;
-//   opacity: 0;
-// }
-// .loaded{
-//   border: 8px solid paleturquoise;
-//   opacity:1;
-// }
-
-
-.col-1-row-1 {
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-
-.col-2-row-1 {
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
-
-.col-2-row-2 {
-  grid-column: 2/3;
-  grid-row: 2/3;
-}
