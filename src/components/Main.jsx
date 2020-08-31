@@ -47,7 +47,12 @@ class Main extends React.Component {
               <div className="gallery-title">  
                <span>{this.state.currentTitle}</span>
               </div>
-              <h3 className="artist-statement-header" onClick={this.handleArtistStatement}> Artist Statement</h3>
+              <h3 
+                className="artist-statement-header" 
+                onClick={this.handleArtistStatement}
+              > 
+                Artist Statement
+              </h3>
           </header>
           <Gallery />
         </div>
