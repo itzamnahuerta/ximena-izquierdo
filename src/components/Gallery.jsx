@@ -28,7 +28,7 @@ export default class Gallery extends Component {
           <div 
             key={id} 
             className={photo.className} 
-            onClick={(e) => {this.handlePhoto(e,photo)}}
+            onClick={(e) => {this.handlePhoto(photo)}}
           >
             <ReactImageAppear 
             
