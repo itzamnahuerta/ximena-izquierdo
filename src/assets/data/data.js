@@ -507,7 +507,6 @@ const data = [
 	{
     portrait: 'Akir with Roses for Pink Bandanazz',
     className:"c18-r2",
-		className: 'child dogwhisperer',
 		location: 'Brooklyn, New York',
 		date: 'April, 2019',
 		imgUrl:
@@ -518,7 +517,7 @@ const data = [
   },
   {
   portrait: "Julio in my hoops",
-  className:"c18-r3",
+	className:"c18-r3",
   location: "Lima",
   date: "May, 2020",
   imgUrl: "https://res.cloudinary.com/canelaconpan/image/upload/v1597544583/xime/Julio_in_my_hoops_Lima_May_2020_urzhcv.png",
