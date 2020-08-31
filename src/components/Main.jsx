@@ -54,6 +54,7 @@ class Main extends React.Component {
                 Artist Statement
               </h3>
           </header>
+          
           <Gallery />
         </div>
       )
