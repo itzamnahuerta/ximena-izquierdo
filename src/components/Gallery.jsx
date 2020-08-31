@@ -4,8 +4,6 @@ import ReactImageAppear from 'react-image-appear';
 import '../styles/Gallery.scss';
 import data from '../assets/data/data';
 
-
-
 export default class Gallery extends Component {
   constructor() {
     super();
@@ -17,57 +15,51 @@ export default class Gallery extends Component {
     }
   }
 
-  handlePhoto = (e) => {
-    this.setState({isPhotoClicked:!this.state.isPhotoClicked, photo: e})
-    console.log("i am being hitt",e )
+  handlePhoto = (photoData) => {
+    this.setState({isPhotoClicked:!this.state.isPhotoClicked, photo: photoData})
   }
 
   render() {
-    let renderPhotos = () => {
-      let photos = this.state.data;
-
-      return photos.map((photo, id) => {
-
-        if(this.state.isPhotoClicked === true) {
-          return(
-            <Photo 
+    let photos = this.state.data;
+    let photoArr = [];
+    if (photos) {
+      photos.map( (photo, id) => {
+      photoArr.push(
+          <div 
             key={id} 
-            isphotoclicked={this.state.isPhotoClicked}
-            handlephoto={this.handlePhoto}
-            data={this.state.photo} 
-          />
-          )
-        } else {
-          return (
-            <div 
-              key={id} 
-              className={photo.className} 
-              isphotoclicked={this.state.isPhotoClicked}
-              handlephoto={this.handlePhoto}
-              // onClick={this.handlePhoto}
-              onClick={this.handlePhoto(photo)}
-            >
-              <ReactImageAppear 
-              // onClick={this.handlePhoto(photo)}
-              
-              isPhotoClicked={this.state.isPhotoClicked}
-              src={photo.imgUrl}
-              animation="fadeIn"
-              animationDuration="1s"
-              showLoader={false}
-              />
-            </div>
-          )
-        }
-      });
-    }
+            className={photo.className} 
+            onClick={(e) => {this.handlePhoto(e,photo)}}
+          >
+            <ReactImageAppear 
+            
+            isPhotoClicked={this.state.isPhotoClicked}
+            src={photo.imgUrl}
+            animation="fadeIn"
+            animationDuration="1s"
+            showLoader={false}
+            />
+          </div>
+        )
+      }
+    )
+ }
+    
     
   
     return (
 
       <div className="gallery-parent-container">
-        {renderPhotos()}
-        
+        {!this.state.isPhotoClicked && (
+          photoArr
+        )}   
+
+        {this.state.isPhotoClicked && (
+          <Photo
+            showPhotoInfo={this.state.isPhotoClicked}
+            handlephoto={this.handlePhoto}
+            data={this.state.photo} 
+            />
+        )}
       </div>
 
     )
