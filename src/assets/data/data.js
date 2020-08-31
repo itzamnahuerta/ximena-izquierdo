@@ -137,17 +137,16 @@ const data = [
 		personalNote:
 			'Una persona intuitiva sintiendo que tiene una comprensión profunda de los demás y un sentido natural de lo que sucede detrás de la escena. Sus nervios y su indecisión van y vienen a medida que temen por lo que les depara el futuro, pero su familia les guía con iluminación y fe.'
 	},
-	{
-    portrait: 'Zion in Chinatown',
-    className:"c6-r1",
-		location: 'Mahanttan, New York',
-		date: 'December, 2019',
-		imgUrl:
-			'https://res.cloudinary.com/canelaconpan/image/upload/v1597546568/xime/Zion_in_Blue_Harlem_January_2020_ykhp9o.png',
-		audioUrl: null,
-		personalNote:
-			'I would describe this person as a girl who’s traveling outside of her comfort zone. It’s her first time with a full face of makeup. She’s feeling a little insecure bc she didn’t like how her hair looked that day. She had some trouble getting to event she was invited to at first. But she got where she needed to go with a little help from her angels, and she felt better after arriving. She feels confident in the outfit she’s wearing. She was feeling pretty dysphoric that day, but she’s okay. '
-	},
+
+  {
+		portrait: "Djino fire escape lip gloss",
+		className: "c6-r1",
+    location: "Chinatown, New York",
+    date: "December, 2019",
+    imgUrl: "https://res.cloudinary.com/canelaconpan/image/upload/v1597543813/xime/Djino__fire_escape__lip_gloss__December_2019_tgi0nm.png",
+    audioUrl: "https://res.cloudinary.com/canelaconpan/video/upload/v1597596030/xime/audio/Djino__fire_escape__lip_gloss__December_2019_zbhgzg.m4a",
+    personalNote: "hi to whoever's listening, this is Dj InO reporting live from New Jersey, Elizabeth, I'm a New Jersey, New York based artist. I'm a DJ, poet, writer, whoever you wanna call it. This piece is called GROWTH, I hope you enjoy it...This age is adulthood, don't get it misunderstood, this age is adulthood, dont get it misunderstood...To really know who we are, Pespective state of mind. To really know who we are, subjective state of mind. I've been a little distant, emotionally, literally, I'm just trying to groove all the way to my tomb, rebirth the slick spirits that's been getting me all alone.I'm never alone. My ancestors are my roof, they're my dome. This age is adulthood, don't get it misunderstood, this age is adulthood, don't get it misunderstood. I talk to myself, it's called a reflection. Each reflection is a deflection or a rejection of a reality that is a subjection of society. Meaning is within, is calling out, then without is calling in. This age is adulthood, don't get it misunderstood. Each age is adulthood, don't get it misunderstood. Each age is adulthood, don't get it misunderstood."
+  },
 	{
     portrait: 'Vianca overlooking the city',
     className:"c6-r2",
@@ -563,8 +562,7 @@ const data = [
     className:"c19-r3",
 		location: 'Mahanttan, New York',
 		date: 'December, 2019',
-		imgUrl:
-			'https://res.cloudinary.com/canelaconpan/image/upload/v1597546568/xime/Zion_in_Blue_Harlem_January_2020_ykhp9o.png',
+		imgUrl: 'https://res.cloudinary.com/canelaconpan/image/upload/v1597546568/xime/Zion_in_Chinatown_Manhattan_December_2019_inhfug.png',
 		audioUrl: null,
 		personalNote:
 			'I would describe this person as a girl who’s traveling outside of her comfort zone. It’s her first time with a full face of makeup. She’s feeling a little insecure bc she didn’t like how her hair looked that day. She had some trouble getting to event she was invited to at first. But she got where she needed to go with a little help from her angels, and she felt better after arriving. She feels confident in the outfit she’s wearing. She was feeling pretty dysphoric that day, but she’s okay. '
