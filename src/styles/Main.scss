@@ -2,7 +2,6 @@ body {
   background-color: white;
 }
 
-
 .gallery-header {
   width: 100% !important;
   position: relative;
@@ -11,27 +10,6 @@ body {
   flex-direction: row;
   margin: 1.5em 1em 4em ;
   justify-content: space-between;
-  // .gallery-title {
-  //   margin-right: 3em;
-  // }
-  // .select-item .active {
-  //   filter: alpha(opacity=100);
-  //   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  //   opacity:1;
-  // }
-  
-  // .select-item {
-  //   display:none;
-  //   font-size: 40px;
-  //   padding: 40px;
-  //   box-sizing: border-box;
-  //   background: #333;
-  //   color: red;
-
-  //   opacity: 0;
-  //   filter: alpha(opacity=0);
-  //   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  // }
 
   .artist-statement-header {
     margin-right: 2em;
