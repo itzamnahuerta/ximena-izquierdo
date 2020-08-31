@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import ReactImageAppear from 'react-image-appear';
-
-import '../styles/Gallery.scss'
+import '../styles/Gallery.scss';
 import data from '../assets/data/data';
 
-console.log("coming from gallery ",data)
+
 
 export default class Gallery extends Component {
   constructor() {
