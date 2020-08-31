@@ -17,7 +17,6 @@ class Photo extends Component {
 
       </div>
       )}
-      {console.log('rendering')}
       </div>
      
     )
