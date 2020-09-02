@@ -1,24 +1,74 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
+import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled';
+import BorderAllOutlinedIcon from '@material-ui/icons/BorderAllOutlined';
 import '../styles/Photo.scss';
 
-class Photo extends Component {
+// whenever you call setstate, rerendering would happen blindly = solved issue: pure component stopped rerendering 42 times once we transitioned it into pure component, would like to update this into a functional component and test out the results as well. 
+
+class Photo extends PureComponent {
   render() {
+    console.log("from photo component")
 
     const photoInfo = this.props.data;
     
-    return (<div>
+    return (
+      <div style={{display:"block"}}>
+        {this.props.showPhotoInfo &&  photoInfo !== {} && (
+          <div className="photo-container">
 
-      {this.props.showPhotoInfo &&  photoInfo !== {} && (
-        <div className="photo-container">
-        <h2> {photoInfo.portrait} </h2>
-        <h5> {photoInfo.location} </h5>
-        <p> {photoInfo.personalNote} </p>
-        <img src={photoInfo.imgUrl}/>
+            <div className="flex-item wrapper-1"> 
+              <span className="portrait-title"> {photoInfo.portrait} </span>
+            </div>
 
-      </div>
+            <div className="flex-item wrapper-2"> 
+              <h5 className="location-content"> 
+                <img 
+                  className="location-marker" 
+                  width={"30px"} 
+                  height={"20px"} 
+                  src="https://img.icons8.com/carbon-copy/100/000000/map-pin.png"
+                />
+                {photoInfo.location} 
+              </h5>
+
+
+              <div className="portrait-img"> 
+                <img
+                    src={photoInfo.imgUrl} 
+                    alt={photoInfo.portrait} 
+                />
+              </div>
+
+              <div> 
+              <p className="personal-note"> {photoInfo.personalNote} </p>
+              </div>
+            </div>
+
+
+
+            <div className="flex-item wrapper-3"> 
+              <h2 className=" date"> {photoInfo.date} </h2>
+            </div>
+
+            <div className="flex-item wrapper-4"> 
+              <div 
+                className="gallery-icon" 
+              > 
+                <BorderAllOutlinedIcon/>
+
+              </div>
+              <div  
+                className="audio-play" 
+              > 
+                <audio autoPlay src={photoInfo.audioUrl} type="audio/mp4"  >
+                </audio>
+                <PlayCircleFilledIcon/>              
+              </div> 
+            </div>
+        </div>
       )}
-      </div>
-     
+    </div>
+
     )
   }
 }
