@@ -1,15 +1,165 @@
 
-body {
-  background-color: white;
-  font-family: Atlas-Grotesk;
+@media (min-width:320px)  { 
+  /* smartphones, iPhone, portrait 480x320 phones */ 
+}
+@media (min-width:481px)  { 
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+}
+@media (min-width:641px)  { 
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+}
+@media (min-width:961px)  { 
+  /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+
+}
+@media (min-width:1025px) { 
+  /* big landscape tablets, laptops, and desktops */ 
+  body {
+    background-color: white;
+    font-family: Atlas-Grotesk;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .photo-container {
+    background-color: white;
+    border: 3px solid red;
+    visibility: visible;
+    width: 95% !important;
+    height: 100%;
+    position: absolute;
+    left: 1%;
+    z-index: 99;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    align-items: stretch;
+    .flex-item {
+      border: 2px solid orange;
+      flex: 1;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 10px solid transparent;
+    }
+    .wrapper-1 {
+      border: 2px solid blue;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;;
+      .portrait-title {
+        writing-mode: vertical-rl;
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+
+        white-space: pre-wrap;
+        display: inline-block;
+        overflow: visible;
+
+        font-size: 2em;
+        text-transform: uppercase;
+      }
+    }
+    .wrapper-2 {
+      border: 2px solid saddlebrown;
+      flex: 2;
+      display:grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 5% 55% 40%;
+      .location-content {
+        display:flex;
+        justify-content: center;
+      }
+      .location-marker {
+        grid-row: 1/2;
+        margin-top: -1%;
+      }
+      .portrait-img {
+        grid-row: 2/3;
+        border: 3px solid pink;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+
+      }
+      .personal-note {
+        grid-row: 3/4;
+      }
+    }
+    .wrapper-3{
+      border: 2px solid forestgreen;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      .date {
+        writing-mode: vertical-lr;
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+
+        font-size: 2em;
+        text-transform: uppercase;
+
+        white-space: pre-wrap;
+        display: inline-block;
+        overflow: visible;
+      }
+    }
+    .wrapper-4{
+      border: 2px solid hotpink;
+      display:flex;
+      flex-direction: column;
+      div.wrapper-4 > div {
+        border: 2px solid purple;
+      }
+    }
+  }
 }
 
 
-.photo-container {
-  position: relative;
-  visibility: visible;
-  width: 100% !important;
-  height: 100% !important;
-  position: absolute;
-  z-index: 100;
+@media (min-width:1281px) { 
+  /* hi-res laptops and desktops */ 
+
 }
+
+
+
+
+// ||||||||||||||||||||||
+// ||| media queries ||||
+// ||||||||||||||||||||||
+
+// @media (min-width:320px)  { 
+//   /* smartphones, iPhone, portrait 480x320 phones */ 
+
+
+// }
+// @media (min-width:481px)  { 
+//   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+// }
+// @media (min-width:641px)  { 
+//   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+// }
+// @media (min-width:961px)  { 
+//   /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+
+// }
+// @media (min-width:1025px) { 
+//   /* big landscape tablets, laptops, and desktops */ 
+  
+  
+// }
+// @media (min-width:1281px) { 
+//   /* hi-res laptops and desktops */ 
+
+// }
