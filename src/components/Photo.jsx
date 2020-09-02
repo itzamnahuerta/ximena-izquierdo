@@ -59,12 +59,12 @@ class Photo extends PureComponent {
                 <BorderAllOutlinedIcon/>
 
               </div>
-              
+
               <div  
                 className="icon audio-play" 
               > 
-                {/* <audio autoPlay src={photoInfo.audioUrl} type="audio/mp4"  >
-                </audio> */}
+                <audio autoPlay src={photoInfo.audioUrl} type="audio/mp4"  >
+                </audio>
                 <PlayCircleFilledIcon/>              
               </div> 
             </div>
