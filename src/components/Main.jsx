@@ -19,8 +19,8 @@ class Main extends React.Component {
   componentDidMount(){
     setInterval(() => {
       if(this.state.currentTitle == "Se Que Fue Así Porque Estuve Allí"){
-        this.setState({currentTitle:"Xime"})
-      }else if(this.state.currentTitle == "Xime"){
+        this.setState({currentTitle:"Xime Izquierda"})
+      }else if(this.state.currentTitle == "Xime Izquierda"){
         this.setState({currentTitle:"Se Que Fue Así Porque Estuve Allí"})
       }
     }, 1000);
@@ -45,7 +45,7 @@ class Main extends React.Component {
         <div>
           <header className="gallery-header"> 
               <div className="gallery-title">  
-               <span>{this.state.currentTitle}</span>
+               <h3 >{this.state.currentTitle}</h3 >
               </div>
               <h3 
                 className="artist-statement-header" 
