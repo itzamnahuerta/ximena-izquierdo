@@ -16,7 +16,7 @@ export default class Gallery extends Component {
   }
 
   handlePhoto = (photoData) => {
-    this.setState({isPhotoClicked:!this.state.isPhotoClicked, photo: photoData})
+    this.setState({isPhotoClicked:true, photo: photoData})
   }
 
   render() {
@@ -28,7 +28,7 @@ export default class Gallery extends Component {
           <div 
             key={id} 
             className={photo.className} 
-            onClick={(e) => {this.handlePhoto(photo)}}
+            onClick={() => {this.handlePhoto(photo)}}
           >
             <ReactImageAppear 
             
