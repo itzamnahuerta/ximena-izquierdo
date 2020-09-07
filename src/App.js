@@ -8,7 +8,9 @@ export default class App extends Component {
     super(props);
 
     this.state = {
-      displayLandingPage: true
+      displayLandingPage: true,
+      displayReadMore: false,
+      lang: 'en'
     }
   }
 
@@ -20,6 +22,23 @@ export default class App extends Component {
     }
   }
 
+  handleReadMore = () => {
+    if( this.state.displayReadMore === true ) {
+      this.setState({ displayReadMore: false})
+    } else if ( this.state.displayReadMore === false) {
+      this.setState({ displayReadMore: true})
+    }
+  }
+
+  toEs = () => {
+    this.setState({lang: 'es'})
+    // console.log("this is espanolll copio")
+  }
+  
+  toEng = () => {
+    this.setState({lang:'en'})
+    // console.log("this is englishhhh okuurrr")
+  }
 
   render() {
       if(this.state.displayLandingPage === true) {
@@ -27,6 +46,11 @@ export default class App extends Component {
           <React.Fragment>
           <LandingPage 
                 handleLandingPage={this.handleLandingPage} 
+                handleReadMore={this.handleReadMore}
+                displayReadMore={this.state.displayReadMore}
+                lang={this.state.lang}
+                toEs={this.toEs}
+                toEng={this.toEng}
             />
           </React.Fragment>
         )
