@@ -50,7 +50,7 @@ class Main extends React.Component {
                 className="artist-statement-header" 
                 onClick={this.handleArtistStatement}
               > 
-                artist statement
+                artist tatement
               </h3>
           </header>
           
