@@ -1,6 +1,5 @@
 @import './Fonts.scss';
 
-
 @keyframes animateToRight {
   0% {
     opacity: 0;
@@ -26,47 +25,6 @@
   100% {
     opacity:1;
   }
-}
-
-body {
-  // font-family: Atlas-Grotesk;
-  // overflow-y: hidden; /* Hide vertical scrollbar */
-  overflow-x: hidden; 
-
-}
-
-::-webkit-scrollbar {
-  width: 0;
-  background: transparent;
-  position: absolute;
-  z-index: -99;
-}
-
-h1 {
-  font-family: Whyte-Inktrap-Medium;
-  text-transform: lowercase;
-  font-size: 4em;
-  margin-top: -0.5em;
-}
-
-.flex-container > button {
-  color: black;
-  background-color: white;
-  border: none;
-}
-
-*:focus {
-  outline: 0 !important;
-}
-
-svg:hover {
-  fill: gray;
-
-
-}
-
-.flex-container > p {
-  line-height: 1.8em;
 }
 
 @keyframes fadeIn {
@@ -114,33 +72,6 @@ svg:hover {
   }
 }
 
-.parent-container {
-  border: 10px solid black;
-  display: flex;
-  justify-content: center;
-}
-
-.flex-container {
-  background-color: white;
-  color: black;
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  max-width: 80%;
-  // border: 2px solid red;
-  padding: 2em;
-}
-
-.commision-desc {
-  font-family: Whyte-Inktrap-Medium;
-}
-
-p {
-  font-family: Univers-Next-Regular;
-}
-
 .fade-in{
   animation: fadeIn ease 1s;
   -webkit-animation: fadeIn ease 5s;
@@ -149,3 +80,231 @@ p {
   -ms-animation: fadeIn ease 5s;
 }
 
+
+//  animation for estamos bien la trienal 20/21 
+@keyframes animateText {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+
+// animation for artist statement
+
+@keyframes slideup {
+  0%{bottom:-50px}
+  100%{bottom:0;}
+}
+
+
+@media (min-width:320px)  { 
+  /* smartphones, iPhone, portrait 480x320 phones */ 
+
+
+}
+@media (min-width:481px)  { 
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+}
+@media (min-width:641px)  { 
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+}
+@media (min-width:961px)  { 
+  /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+
+}
+@media (min-width:1025px) { 
+  /* big landscape tablets, laptops, and desktops */ 
+  
+h1 {
+  font-family: Whyte-Inktrap-Medium;
+  text-transform: lowercase;
+  // font-size: 4em;
+  // margin-top: -0.5em;
+}
+
+.flex-container > button {
+  color: black;
+  background-color: #FFFFFF;
+  border: none;
+}
+
+*:focus {
+  outline: 0 !important;
+}
+
+svg:hover {
+  fill: gray;
+}
+
+.flex-container > p {
+  line-height: 1.8em;
+}
+
+.parent-container {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.flex-container {
+  background-color: white;
+  color: black;
+  display:flex;
+  flex-direction: column;
+  // justify-content: space-between;
+
+  min-height: 100vh;
+  max-width: 80%;
+  // border: 2px solid red;
+  padding: 2em;
+  flex:1;
+
+  .f-item {
+    // border: .2px solid red;
+  }
+
+  .title-container {
+    margin-top: 5%;
+    // flex:2;
+    flex-shrink: 4;
+    font-size:2.3vw;
+    letter-spacing: .5px;
+    color: black;
+    
+  }
+
+  .artist-container {
+    margin-top: 1%;
+    flex-shrink:2;
+    .artist-desc {
+      display: inline-block;
+      border: 1px solid black;
+      padding: 1em
+    }
+  }
+
+  .navigation-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch; 
+    .read-more {
+      display: block;
+      margin-right: 2em;
+    }
+    button {
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    position: relative;
+    text-transform: lowercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    cursor: pointer;
+    &:after, &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      border: 2px solid #000;
+      transition: transform .2s ;
+    }
+    &:after {
+      transform: translate(3px, 3px);	
+    }
+    &:before {
+      transform: translate(-3px, -3px);
+    }
+    &:hover {
+      &:after, &:before {
+        transform: translate(0);
+      }
+    }
+    }
+  }
+  
+  .commission-container {
+    margin-top: 2em;
+    display:flex;
+    justify-content: flex-end;
+    .commission-content {
+      border: .7px solid black;
+      height: 160px;
+      padding: 5px 10px;
+    }
+    .shiny-text {
+      position: relative;
+      font-family: sans-serif;
+      // text-transform: uppercase;
+      font-size: 1em;
+      letter-spacing: 2px;
+      overflow: hidden;
+      background: linear-gradient(90deg, #000, #fff, #000);
+      background-repeat: no-repeat;
+      background-size: 80%;
+      animation: animateText 3s linear infinite;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    }
+  }
+
+  .commision-desc {
+    font-family: Whyte-Inktrap-Medium;
+  }
+  
+  p {
+    font-family: Univers-Next-Regular;
+  }
+  .read-more-container-open {
+    // background:red;
+    margin-top: 6em;
+    // border: 2px solid red;
+    position:relative;
+    bottom:-1200px;
+    height:auto;
+    width:90%;
+    left:0;
+    animation-name:slideup;
+    animation-delay:0.2s;
+    animation-duration:0.7s;
+    animation-fill-mode:forwards;
+    animation-timing-function:ease-out;
+
+    line-height: 1.7;
+    font-size: 14pt;
+    .lang {
+      cursor: pointer;
+    }
+    .lang:hover{
+      color :gray;
+    }
+
+  }
+  .read-more-container-closed {
+    display:none;
+    }
+  }
+}
+
+@media (min-width:1281px) { 
+  /* hi-res laptops and desktops */ 
+
+}
+
+body {
+  // font-family: Atlas-Grotesk;
+  // overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; 
+
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+  position: absolute;
+  z-index: -99;
+}
