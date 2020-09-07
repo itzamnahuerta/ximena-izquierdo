@@ -20,123 +20,77 @@
     margin: 0;
     padding: 0;
   }
-  
   .photo-container {
     background-color: white;
     // border: 3px solid red;
     visibility: visible;
     width: 95% !important;
-    height: 100%;
+    height: 100% !important;
     position: absolute;
     left: 1%;
     z-index: 99;
-    display: flex;
-    flex-direction: row;
-    flex-basis: 100%;
-    align-items: stretch;
-    .flex-item {
-      // border: 2px solid orange;
-      flex: 1;
-      border-left: 5px solid transparent;
-      border-right: 5px solid transparent;
-      border-bottom: 10px solid transparent;
+    display:flex;
+    flex-direction: column;
+    .wrapper-0{
+      // border: 2px solid red;
+      margin-left: auto;
+      .gallery{
+        
+        width: 2em;
+        height: 2em;
+        align-self: center;
+        padding-left: 40%;
+      }
     }
-    .wrapper-1 {
-      // border: 2px solid blue;
-      position: relative;
+    .portrait-img {
+      width:100%;
+      height:70%;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-content: center;;
-      .portrait-title {
-        writing-mode: vertical-rl;
-        -webkit-transform: rotate(180deg);
-        -moz-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-        -o-transform: rotate(180deg);
-        transform: rotate(180deg);
-        -webkit-transform: rotate(180deg);
-
-        white-space: pre-wrap;
-        display: inline-block;
-        overflow: visible;
-
-        font-size: 2em;
-        text-transform: uppercase;
-      }
-    }
-    .wrapper-2 {
-      // border: 2px solid saddlebrown;
-      flex: 2;
-      display:grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 5% 55% 40%;
-      .location-content {
-        display:flex;
-        justify-content: center;
-      }
-      .location-marker {
-        grid-row: 1/2;
-        margin-top: -1%;
-      }
-      .portrait-img {
-        grid-row: 2/3;
-        // border: 3px solid pink;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-
-      }
-      .personal-note {
-        grid-row: 3/4;
-      }
-    }
-    .wrapper-3{
-      // border: 2px solid forestgreen;
-      display: flex;
-      flex-wrap: wrap;
       justify-content: center;
       align-content: center;
-      .date {
-        writing-mode: vertical-lr;
-        -webkit-transform: rotate(360deg);
-        -moz-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        -o-transform: rotate(360deg);
-        transform: rotate(360deg);
-        -webkit-transform: rotate(360deg);
-
-        font-size: 2em;
-        text-transform: uppercase;
-
-        white-space: pre-wrap;
-        display: inline-block;
-        overflow: visible;
-      }
     }
-    .wrapper-4{
-      // border: 2px solid hotpink;
+    .portrait-img img {
+      width: auto;
+      height: auto;
+      object-fit: cover;
+
+    }
+    .content {
       display:flex;
-      flex-direction: column;
-      width: 100%;
-      height: 100%;
-       .icon {
-        //  border: 2px solid peru;
-         flex: 1;
-         display: flex;
-        //  flex-direction: column;
-         justify-content: center;
-       }
-       .gallery {
-          margin-top: 2em;
-       }
+      flex-direction: row;
+      align-items: stretch;
+      height: 450px;
+      flex-grow: 3;
+      margin-top: 8em;
+      // border: 2px solid red;
+      .wrapper-1{
+      
+        margin-left: 8em;
+        width: 60%;
+        .c-1 {
+          border-bottom: 2px solid black;
+          .portrait-title {
+            display: flex;
+            .audio-play {
+              margin-left: auto;
+            }
+          }
+        }
+        .c-2 {
+          overflow: scroll;
+          font-size: 1.3em;
+        }
+      }
+      .wrapper-2 {
+        margin-left: 8em;
+        width: 20%;
+        // border-left: 1px solid black;
+        // border-right: 1px solid black;
+        padding-left: 1em;
+        justify-content: center;
+        // border: 2px solid red;
+      }
 
-       .audio-play{
-        align-items: flex-end;
-        margin-bottom: 15em;
-
-       }
     }
   }
 }
