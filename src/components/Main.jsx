@@ -11,17 +11,16 @@ class Main extends React.Component {
 
     this.state = {
       isArtistStatementClicked: false,
-      currentTitle: "Se Que Fue Así Porque Estuve Allí"
+      currentTitle: "se que fue así porque estuve allí"
     }
   }
 
-
   componentDidMount(){
     setInterval(() => {
-      if(this.state.currentTitle == "Se Que Fue Así Porque Estuve Allí"){
-        this.setState({currentTitle:"Xime Izquierda"})
-      }else if(this.state.currentTitle == "Xime Izquierda"){
-        this.setState({currentTitle:"Se Que Fue Así Porque Estuve Allí"})
+      if(this.state.currentTitle == "se que fue así porque estuve allí"){
+        this.setState({currentTitle:"xime izquierda"})
+      }else if(this.state.currentTitle == "xime izquierda"){
+        this.setState({currentTitle:"se que fue así porque estuve allí"})
       }
     }, 1000);
   }
@@ -51,7 +50,7 @@ class Main extends React.Component {
                 className="artist-statement-header" 
                 onClick={this.handleArtistStatement}
               > 
-                Artist Statement
+                artist statement
               </h3>
           </header>
           
