@@ -1,77 +1,73 @@
 import React, { PureComponent } from 'react';
-import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled';
 import BorderAllOutlinedIcon from '@material-ui/icons/BorderAllOutlined';
-import { GrLocationPin } from 'react-icons/gr';
+import { AiTwotoneSound } from 'react-icons/ai'
+import PauseIcon from '@material-ui/icons/Pause';
 import '../styles/Photo.scss';
 
 // whenever you call setstate, rerendering would happen blindly = solved issue: pure component stopped rerendering 42 times once we transitioned it into pure component, would like to update this into a functional component and test out the results as well. 
 
 class Photo extends PureComponent {
-  render() {
-    console.log("from photo component")
+  constructor(props) {
+    super(props);
 
+    this.state = {
+      isGalleryIconClicked: false
+    }
+  }
+
+  handleArtistStatement = () => {
+    this.setState({isGalleryIconClicked:!this.state.isGalleryIconClicked})
+  }
+
+  render() {
     const photoInfo = this.props.data;
     
     return (
-      <div style={{display:"block"}}>
+      <div>
         {this.props.showPhotoInfo &&  photoInfo !== {} && (
           <div className="photo-container">
 
-            <div className="flex-item wrapper-1"> 
-              <span className="portrait-title"> {photoInfo.portrait} </span>
-            </div>
-
-            <div className="flex-item wrapper-2"> 
-              <h5 className="location-content"> 
-              <GrLocationPin/>
-                {/* <img 
-                  className="location-marker" 
-                  width={"30px"} 
-                  height={"20px"} 
-                  src="https://img.icons8.com/carbon-copy/100/000000/map-pin.png"
-                /> */}
-                {photoInfo.location} 
-              </h5>
-
-
-              <div className="portrait-img"> 
-                <img
-                    src={photoInfo.imgUrl} 
-                    alt={photoInfo.portrait} 
-                />
-              </div>
-
-              <div> 
-              <p className="personal-note"> {photoInfo.personalNote} </p>
+            <div className="wrapper-0"> 
+              <div className="icon gallery" > 
+              <BorderAllOutlinedIcon style={{fontSize:"2em"}} />
               </div>
             </div>
 
-
-
-            <div className="flex-item wrapper-3"> 
-              <h2 className=" date"> {photoInfo.date} </h2>
+            <div className="portrait-img"> 
+              <img
+                  src={photoInfo.imgUrl} 
+                  alt={photoInfo.portrait} 
+              />
             </div>
 
-            <div className="flex-item wrapper-4"> 
-              <div 
-                className="icon gallery" 
-              > 
-                <BorderAllOutlinedIcon/>
+            <div className="content"> 
 
+              <div className="wrapper-1">
+                <div className="c-1">
+                  <h1 className="portrait-title"> 
+                    {photoInfo.portrait}  
+                    <span className="icon audio-play"> 
+                      {/* <audio autoPlay src={photoInfo.audioUrl} type="audio/mp4"></audio>  */}
+                      <AiTwotoneSound/>               
+                    </span>  
+                  </h1>
+
+        
+                </div> 
+                <div className="c-2"> 
+                  <p className="personal-note"> {photoInfo.personalNote} </p>
+                </div>
               </div>
 
-              <div  
-                className="icon audio-play" 
-              > 
-                <audio autoPlay src={photoInfo.audioUrl} type="audio/mp4"  >
-                </audio>
-                <PlayCircleFilledIcon/>              
-              </div> 
-            </div>
-        </div>
+              <div className="wrapper-2">
+                <h3 className="location-content">{photoInfo.location}</h3>
+                <h3 className=" date"> {photoInfo.date} </h3>
+              </div>
+            </div> 
+    
+          </div> 
       )}
     </div>
-
     )
   }
 }
