@@ -1,27 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "90e7f52867b4813c81e7c25f12271103",
+    "revision": "16083dc0bba6a46072d8ddb3907a94d9",
     "url": "/index.html"
   },
   {
-    "revision": "5803b89709f576fc2fd3",
-    "url": "/static/css/main.388aa593.chunk.css"
+    "revision": "b89b686f39f63cde7fbd",
+    "url": "/static/css/main.6a8bdd6d.chunk.css"
   },
   {
-    "revision": "125b8d059d75ecadad94",
-    "url": "/static/js/2.329e26c7.chunk.js"
+    "revision": "f9727ffdce1981da94b8",
+    "url": "/static/js/2.533c35b1.chunk.js"
   },
   {
     "revision": "5b55082f30ebc731dc9ce1ede8e652fa",
-    "url": "/static/js/2.329e26c7.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.533c35b1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5803b89709f576fc2fd3",
-    "url": "/static/js/main.4efc8a53.chunk.js"
+    "revision": "b89b686f39f63cde7fbd",
+    "url": "/static/js/main.2616d116.chunk.js"
   },
   {
     "revision": "2da695eeeb1e7e863336",
     "url": "/static/js/runtime-main.c99ad947.js"
+  },
+  {
+    "revision": "4d8fdeb265ff6d34fb3bd8e4292665c0",
+    "url": "/static/media/AvenirNext-Regular.4d8fdeb2.ttf"
+  },
+  {
+    "revision": "88da9ccecc9a384876ccf7c53eccec2d",
+    "url": "/static/media/AvenirNextBold.88da9cce.ttf"
   },
   {
     "revision": "db5edae5fe203454c7a09325da4c35c9",
