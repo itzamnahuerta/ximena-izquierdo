@@ -190,9 +190,12 @@ svg:hover {
   }
   .commission-container {
     // margin-top: -3em;
-    font-size:20pt;
+    padding: 1em;
+    font-family: Avenir-Reg;
+    font-size:10pt;
     .span-1 {
       font-weight: bold;
+      font-family: Avenir-Bold;
     }
     .commision-desc {
       font-family: Whyte-Inktrap-Medium;
@@ -275,6 +278,10 @@ svg:hover {
     align-items: center;
     justify-content: flex-end;
     margin-right: 10em;
+
+    .logo {
+      pointer-events: none
+    }
   }
   p {
     font-family: Univers-Next-Regular;
