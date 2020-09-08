@@ -36,6 +36,14 @@ body {
   z-index: 100;
   background-color: white;
   animation: openModal 1s ease;
+  line-height: 1.7;
+  font-size: 14pt;
+  .lang {
+    cursor: pointer;
+  }
+  .lang:hover{
+    color :gray;
+  }
 }
 
 .close-artist-statement {
@@ -49,14 +57,15 @@ body {
 }
 
 .parent-container {
-  border: 10px solid black;
+  // border: 10px solid black;
+  background-color: white;
   display: flex;
   justify-content: center;
 }
 
 .flex-container {
   // border: 10px solid purple;
-
+  justify-content: center;
   max-width: 80%;
   display: flex;
   flex-direction: column;
