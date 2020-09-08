@@ -32,12 +32,10 @@ export default class App extends Component {
 
   toEs = () => {
     this.setState({lang: 'es'})
-    // console.log("this is espanolll copio")
   }
   
   toEng = () => {
     this.setState({lang:'en'})
-    // console.log("this is englishhhh okuurrr")
   }
 
   render() {
