@@ -23,7 +23,7 @@ import {ReactComponent as Logo}  from '../assets/favicon/logo.svg';
 
       <div className="f-item artist-container">
         <h3 className="artist-desc">
-          Xime Izquierdo Ugaz
+          xime izquierdo ugaz
         </h3>
       </div>
 
