@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fac1c200052664d263c4a874bcbfd9f8",
+    "revision": "90e7f52867b4813c81e7c25f12271103",
     "url": "/index.html"
   },
   {
-    "revision": "d7f12e05b948d84fd30b",
-    "url": "/static/css/main.212480ae.chunk.css"
+    "revision": "5803b89709f576fc2fd3",
+    "url": "/static/css/main.388aa593.chunk.css"
   },
   {
-    "revision": "b56e2150898ad32c5199",
-    "url": "/static/js/2.416c4d37.chunk.js"
+    "revision": "125b8d059d75ecadad94",
+    "url": "/static/js/2.329e26c7.chunk.js"
   },
   {
-    "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/static/js/2.416c4d37.chunk.js.LICENSE.txt"
+    "revision": "5b55082f30ebc731dc9ce1ede8e652fa",
+    "url": "/static/js/2.329e26c7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d7f12e05b948d84fd30b",
-    "url": "/static/js/main.cf50a607.chunk.js"
+    "revision": "5803b89709f576fc2fd3",
+    "url": "/static/js/main.4efc8a53.chunk.js"
   },
   {
     "revision": "2da695eeeb1e7e863336",
@@ -46,6 +46,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b7456a51363ad29bd67aafba0430f505",
     "url": "/static/media/cigars-light-webfont.b7456a51.otf"
+  },
+  {
+    "revision": "abed40284aafe5d0bdb0ceec6ad3c55a",
+    "url": "/static/media/logo.abed4028.svg"
   },
   {
     "revision": "668475a5df7dc6918c8ae735d32e5679",
