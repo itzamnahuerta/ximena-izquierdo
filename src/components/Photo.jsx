@@ -3,7 +3,10 @@ import BorderAllOutlinedIcon from '@material-ui/icons/BorderAllOutlined';
 import { AiTwotoneSound } from 'react-icons/ai'
 import PauseIcon from '@material-ui/icons/Pause';
 import '../styles/Photo.scss';
+import AudioPlayer from 'react-h5-audio-player';
 const Sound = require('react-sound').default;
+
+
 // whenever you call setstate, rerendering would happen blindly = solved issue: pure component stopped rerendering 42 times once we transitioned it into pure component, would like to update this into a functional component and test out the results as well. 
 
 class Photo extends PureComponent {
@@ -52,17 +55,14 @@ class Photo extends PureComponent {
                 <div className="c-1">
                   <h1 className="portrait-title"> 
                     {photoInfo.portrait}  
-                    <span className="icon audio-play"> 
-                    <Sound
-                      url={photoInfo.audioUrl}
-                      playStatus={Sound.status.PLAYING}
-                      playFromPosition={300 /* in milliseconds */}
-                      onLoading={this.handleSongLoading}
-                      onPlaying={this.handleSongPlaying}
-                      onFinishedPlaying={this.handleSongFinishedPlaying}
-                    />
-                      <AiTwotoneSound
-                      />               
+                    <span className="icon audio"> 
+                      <AudioPlayer
+                              className="audio-player"
+                              autoPlay={false}
+                              src={photoInfo.audioUrl}
+                              onPlay={e => console.log("onPlay")}
+                       
+                      />
                     </span>  
                   </h1>
 
