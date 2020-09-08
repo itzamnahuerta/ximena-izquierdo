@@ -3,7 +3,7 @@ import BorderAllOutlinedIcon from '@material-ui/icons/BorderAllOutlined';
 import { AiTwotoneSound } from 'react-icons/ai'
 import PauseIcon from '@material-ui/icons/Pause';
 import '../styles/Photo.scss';
-
+const Sound = require('react-sound').default;
 // whenever you call setstate, rerendering would happen blindly = solved issue: pure component stopped rerendering 42 times once we transitioned it into pure component, would like to update this into a functional component and test out the results as well. 
 
 class Photo extends PureComponent {
@@ -11,7 +11,8 @@ class Photo extends PureComponent {
     super(props);
 
     this.state = {
-      isGalleryIconClicked: false
+      isGalleryIconClicked: false,
+      playAudio: true
     }
   }
 
@@ -19,6 +20,11 @@ class Photo extends PureComponent {
     this.setState({isGalleryIconClicked:!this.state.isGalleryIconClicked})
   }
 
+  togglePlay = () => {
+    this.setState({ playAudio: !this.state.play }, () => {
+      this.state.playAudio ? this.audio.play() : this.audio.pause();
+    });
+  }
   render() {
     const photoInfo = this.props.data;
     
@@ -47,8 +53,16 @@ class Photo extends PureComponent {
                   <h1 className="portrait-title"> 
                     {photoInfo.portrait}  
                     <span className="icon audio-play"> 
-                      {/* <audio autoPlay src={photoInfo.audioUrl} type="audio/mp4"></audio>  */}
-                      <AiTwotoneSound/>               
+                    <Sound
+                      url={photoInfo.audioUrl}
+                      playStatus={Sound.status.PLAYING}
+                      playFromPosition={300 /* in milliseconds */}
+                      onLoading={this.handleSongLoading}
+                      onPlaying={this.handleSongPlaying}
+                      onFinishedPlaying={this.handleSongFinishedPlaying}
+                    />
+                      <AiTwotoneSound
+                      />               
                     </span>  
                   </h1>
 
