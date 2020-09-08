@@ -100,6 +100,31 @@
 }
 
 
+// animation for commission = replaced with html5 marquee tag
+
+/* Move it (define the animation) */
+// @-moz-keyframes marqueeText {
+//   0%   { -moz-transform: translateX(100%); }
+//   100% { -moz-transform: translateX(-100%); }
+//  }
+//  @-webkit-keyframes marqueeText {
+//   0%   { -webkit-transform: translateX(100%); }
+//   100% { -webkit-transform: translateX(-100%); }
+//  }
+//  @keyframes marqueeText {
+//   0%   { 
+//   -moz-transform: translateX(100%); /* Firefox bug fix */
+//   -webkit-transform: translateX(100%); /* Firefox bug fix */
+//   transform: translateX(100%); 		
+//   }
+//   100% { 
+//   -moz-transform: translateX(-100%); /* Firefox bug fix */
+//   -webkit-transform: translateX(-100%); /* Firefox bug fix */
+//   transform: translateX(-100%); 
+//   }
+//  }
+
+
 @media (min-width:320px)  { 
   /* smartphones, iPhone, portrait 480x320 phones */ 
 
@@ -147,6 +172,7 @@ svg:hover {
   display: flex;
   justify-content: center;
   background-color: white;
+  // border: 2px solid red;
 }
 
 .flex-container {
@@ -154,18 +180,24 @@ svg:hover {
   color: black;
   display:flex;
   flex-direction: column;
-  // justify-content: space-between;
-
   min-height: 100vh;
   max-width: 80%;
   // border: 2px solid red;
   padding: 2em;
   flex:1;
-
-  .f-item {
-    // border: .2px solid red;
+  .f-item{
+    // border: 2px solid red;
   }
-
+  .commission-container {
+    // margin-top: -3em;
+    font-size:20pt;
+    .span-1 {
+      font-weight: bold;
+    }
+    .commision-desc {
+      font-family: Whyte-Inktrap-Medium;
+    }
+  }
   .title-container {
     margin-top: 5%;
     // flex:2;
@@ -175,7 +207,6 @@ svg:hover {
     color: black;
     
   }
-
   .artist-container {
     margin-top: 1%;
     flex-shrink:2;
@@ -184,8 +215,21 @@ svg:hover {
       border: 1px solid black;
       padding: 1em
     }
+    // .shiny-text {
+      //   position: relative;
+      //   font-family: sans-serif;
+      //   // text-transform: uppercase;
+      //   font-size: 1em;
+      //   letter-spacing: 2px;
+      //   overflow: hidden;
+      //   background: linear-gradient(90deg, #000, #fff, #000);
+      //   background-repeat: no-repeat;
+      //   background-size: 80%;
+      //   animation: animateText 3s linear infinite;
+      //   -webkit-background-clip: text;
+      //   -webkit-text-fill-color: rgba(255, 255, 255, 0);
+      // }
   }
-
   .navigation-container {
     display: flex;
     flex-direction: row;
@@ -226,36 +270,12 @@ svg:hover {
     }
     }
   }
-  
-  .commission-container {
-    margin-top: 2em;
-    display:flex;
+  .logo-container {
+    display: flex;
+    align-items: center;
     justify-content: flex-end;
-    .commission-content {
-      border: .7px solid black;
-      height: 160px;
-      padding: 5px 10px;
-    }
-    .shiny-text {
-      position: relative;
-      font-family: sans-serif;
-      // text-transform: uppercase;
-      font-size: 1em;
-      letter-spacing: 2px;
-      overflow: hidden;
-      background: linear-gradient(90deg, #000, #fff, #000);
-      background-repeat: no-repeat;
-      background-size: 80%;
-      animation: animateText 3s linear infinite;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: rgba(255, 255, 255, 0);
-    }
+    margin-right: 10em;
   }
-
-  .commision-desc {
-    font-family: Whyte-Inktrap-Medium;
-  }
-  
   p {
     font-family: Univers-Next-Regular;
   }
