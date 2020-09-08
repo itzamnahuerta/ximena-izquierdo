@@ -13,7 +13,7 @@ import {ReactComponent as Logo}  from '../assets/favicon/logo.svg';
         behavior="scroll" 
         direction="left">
         <span className="span-1"> Estamos Bien: La Trienal 20/21 </span>  &nbsp; &nbsp; &nbsp; &nbsp;
-        <span>Commissioned by El Museo del Barrio.</span> 
+        <span>Commissioned by El Museo del Barrio</span> 
         &nbsp; &nbsp; &nbsp; &nbsp;
         <span> Curated by Elia Alba, Susanna Temkin, and Rodrigo Moura </span> 
       </marquee>
