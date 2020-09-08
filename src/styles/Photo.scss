@@ -72,15 +72,17 @@
           border-bottom: 2px solid black;
           .portrait-title {
             display: flex;
+            .audio {
+                margin-left: auto;
+            }
           }
+
         }
         .c-2 {
           overflow: scroll;
           font-size: 1.3em;
         }
-        .icon audio {
-          margin-left: auto;
-        }
+
         .audio-player {
           // width: 1000px;
           margin-left: auto;
