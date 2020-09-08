@@ -1,13 +1,22 @@
 import React from 'react';
 import '../styles/LandingPage.scss';
-// import {ReactComponent as Logo}  from '../assets/favicon/logo.svg';
+import {ReactComponent as Logo}  from '../assets/favicon/logo.svg';
 
 
  const LandingPage = (props) =>  {
   return (
-    <div className="parent-container fade-in"> 
+    <div className="parent-container"> 
     <div className="flex-container fade-in">
-
+    <marquee 
+      className="f-item  
+      commission-container" 
+      behavior="scroll" 
+      direction="left">
+        <span className="span-1">Estamos Bien: La Trienal 20/21 </span>  &nbsp; &nbsp; &nbsp; &nbsp;
+        <span>Commissioned by El Museo del Barrio.</span> 
+        &nbsp; &nbsp; &nbsp; &nbsp;
+        <span> Curated by Elia Alba, Susanna Temkin, and Rodrigo Moura </span> 
+      </marquee>
       <div className="f-item title-container">
         <h1> Se Que Fue Así Porque Estuve Allí </h1> 
       </div>
@@ -32,21 +41,10 @@ import '../styles/LandingPage.scss';
         </div>
       </div>
 
-      <div className="f-item commission-container">
-        <div className="commission-content"> 
-          <p className="shiny-text">            
-            Estamos Bien: La Trienal 20/21  
-          </p>
-          <p> 
-            commissioned by <span>  El Museo del Barrio </span> 
-          </p>
-          <p> 
-            curated by Elia Alba Susanna Temkin, and Rodrigo Moura
-          </p>
-
-        </div>
+      <div className="f-item logo-container"> 
+      <Logo className="logo" width={"320px"} height={"320px"} />
       </div>
-
+  
 
       <div className={props.displayReadMore ?"read-more-container-open" : "read-more-container-closed"}> 
         {props.lang === "es" && (
