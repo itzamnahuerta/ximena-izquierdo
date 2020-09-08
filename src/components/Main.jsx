@@ -18,8 +18,8 @@ class Main extends React.Component {
   componentDidMount(){
     setInterval(() => {
       if(this.state.currentTitle == "se que fue así porque estuve allí"){
-        this.setState({currentTitle:"xime izquierda"})
-      }else if(this.state.currentTitle == "xime izquierda"){
+        this.setState({currentTitle:"xime izquierdo ugaz"})
+      }else if(this.state.currentTitle == "xime izquierdo ugaz"){
         this.setState({currentTitle:"se que fue así porque estuve allí"})
       }
     }, 1000);
@@ -50,7 +50,7 @@ class Main extends React.Component {
                 className="artist-statement-header" 
                 onClick={this.handleArtistStatement}
               > 
-                artist statement
+                about
               </h3>
           </header>
           
