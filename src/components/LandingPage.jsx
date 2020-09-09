@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/LandingPage.scss';
-import {ReactComponent as Logo}  from '../assets/favicon/logo.svg';
 
+import artistImg from '../assets/artist-img/xime_retrato.PNG'
 
  const LandingPage = (props) =>  {
   return (
@@ -15,7 +15,7 @@ import {ReactComponent as Logo}  from '../assets/favicon/logo.svg';
         <span className="span-1"> Estamos Bien: La Trienal 20/21 </span>  &nbsp; &nbsp; &nbsp; &nbsp;
         <span>Commissioned by El Museo del Barrio</span> 
         &nbsp; &nbsp; &nbsp; &nbsp;
-        <span> Curated by Elia Alba, Susanna Temkin, and Rodrigo Moura </span> 
+        <span> Curated by Rodrigo Moura, Susanna Temkin, and Elia Alba </span> 
       </marquee>
 
       <div className="f-item title-container">
@@ -24,7 +24,7 @@ import {ReactComponent as Logo}  from '../assets/favicon/logo.svg';
 
       <div className="f-item artist-container">
         <h3 className="artist-desc">
-          xime izquierdo ugaz
+        a virtual archive by xime izquierdo ugaz
         </h3>
       </div>
 
@@ -42,8 +42,8 @@ import {ReactComponent as Logo}  from '../assets/favicon/logo.svg';
         </div>
       </div>
 
-      <div className="f-item logo-container"> 
-      <Logo className="logo" width={"320px"} height={"320px"} />
+      <div className="f-item artist-img-container"> 
+        <img className="artist-img" src={artistImg} />
       </div>
   
 

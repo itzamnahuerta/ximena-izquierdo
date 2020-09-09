@@ -1,6 +1,137 @@
 
 @media (min-width:320px)  { 
   /* smartphones, iPhone, portrait 480x320 phones */ 
+  body {
+    background-color: white;
+    font-family: Atlas-Grotesk;
+    margin: 0;
+    padding: 0;
+  }
+  .photo-container {
+    background-color: white;
+    // border: 3px solid red;
+    visibility: visible;
+    width: 95% !important;
+    // height: 100% !important;
+    position: absolute;
+    left: 1%;
+    z-index: 99;
+    display:flex;
+    flex-direction: column;
+    .wrapper-0{
+      // border: 2px solid red;
+      margin-left: auto;
+      .gallery{
+        
+        width: 2em;
+        height: 2em;
+        align-self: center;
+        padding-left: -30%;
+      }
+    }
+    .portrait-img {
+      // border: 3px solid green;
+      margin-top: 2em;
+      margin-left: 2em;
+      width:90%;
+      height:60%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+    .portrait-img img {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+
+    }
+    .content {
+      // border: 2px solid red;
+      display:flex;
+      flex-direction: row;
+      align-items: stretch;
+      height: 450px;
+      // flex-grow: 3;
+      margin-top: 8em;
+      
+
+      .wrapper-1 {
+        // margin-left: 0em;
+        // border: 2px solid hotpink;
+        width: 320px;
+        .c-1 {
+          border-bottom: 2px solid black;
+          .portrait-title {
+            display: flex;
+            font-size: 16pt;
+            .audio {
+                margin-left: auto;
+            }
+          }
+
+        }
+        .c-2 {
+          // border: 2px solid rebeccapurple;
+          overflow: scroll;
+          font-size: 1em;
+        }
+
+        .audio-player {
+          // width: 1000px;
+          margin-left: auto;
+          // border:3px solid purple;
+
+          display: flex;
+          flex-direction: row;
+          .rhap_progress-section {
+            display: none;
+            .rhap_total-time {
+                margin-left: 1em;
+            }
+          }
+          .rhap_repeat-button {
+            // border: 2px solid red;
+            display: none;
+          }
+          .rhap_rewind-button {
+            display:none;
+          }
+          .rhap_forward-button {
+            display:none;
+          }
+          .rhap_volume-button {
+            display:none;
+          }
+          button {
+            width: 50px;
+            height: 55px;
+            background-color: white;
+            border: none; 
+            margin-top: -1.3em;
+          }
+          button  > svg {
+            width: 2em;
+            height: 2em;
+          }
+        }
+        
+      }
+
+      h3 {
+        font-size: 10pt;
+      }
+      .wrapper-2 {
+        margin-left: .01em;
+        width: 20%;
+        padding-left: 1em;
+        justify-content: center;
+        // border: 2px solid red;
+
+      }
+
+    }
+  }
 }
 @media (min-width:481px)  { 
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 

@@ -1,5 +1,9 @@
 @import './Fonts.scss';
 
+
+
+
+
 body {
   background-color: white;
   font-family: Atlas-Grotesk;
@@ -27,6 +31,69 @@ body {
   z-index: -99;
 }
 
+@media (min-width:320px)  { 
+  /* smartphones, iPhone, portrait 480x320 phones */ 
+
+  .open-artist-statement {
+    position: relative;
+    visibility: visible;
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+    animation: openModal 1s ease;
+    line-height: 1.7;
+    font-size: 10pt;
+    .lang {
+      cursor: pointer;
+    }
+    .lang:hover{
+      color :gray;
+    }
+  }
+  
+  .close-artist-statement {
+    transform: translate(120vw);
+    visibility: hidden;
+    transition: visibility 7s step-end,transform 7s ease-out, -webkit-transform 7s ease;
+  }
+  
+  #btn-icon {
+    font-size: 40px;
+  }
+  
+  .parent-container {
+    // border: 10px solid black;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .flex-container {
+    // border: 10px solid purple;
+    justify-content: center;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: #C2E5F2;
+  }
+
+}
+@media (min-width:481px)  { 
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+}
+@media (min-width:641px)  { 
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+}
+@media (min-width:961px)  { 
+  /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+
+}
+@media (min-width:1025px) { 
+  /* big landscape tablets, laptops, and desktops */ 
+  
 .open-artist-statement {
   position: relative;
   visibility: visible;
@@ -72,3 +139,10 @@ body {
   align-content: center;
   background-color: #C2E5F2;
 }
+  
+}
+@media (min-width:1281px) { 
+  /* hi-res laptops and desktops */ 
+
+}
+
