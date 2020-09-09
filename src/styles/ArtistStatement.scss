@@ -1,9 +1,6 @@
 @import './Fonts.scss';
 
 
-
-
-
 body {
   background-color: white;
   font-family: Atlas-Grotesk;
@@ -97,14 +94,17 @@ body {
 .open-artist-statement {
   position: relative;
   visibility: visible;
-  width: 100% !important;
-  height: 100% !important;
+  // width: 100% !important;
+  // height: 100% !important;
+  width: 100VW;
+  height: 100VH;
   position: absolute;
   z-index: 100;
   background-color: white;
   animation: openModal 1s ease;
   line-height: 1.7;
   font-size: 14pt;
+  
   .lang {
     cursor: pointer;
   }
