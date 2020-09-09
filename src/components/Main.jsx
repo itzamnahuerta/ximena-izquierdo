@@ -56,21 +56,31 @@ class Main extends React.Component {
               <div className="gallery-title">  
                <h3 >{this.state.currentTitle}</h3 >
               </div>
-              
-              {/* <div
-                className="index-header"
-                onClick={this.handleIndex}
+              <div className="h-c-2">
+              <h3
+              className="index-header"
+              onClick={this.handleIndex}
               > index 
-              </div> */}
+              </h3>
               <h3 
                 className="artist-statement-header" 
                 onClick={this.handleArtistStatement}
               > 
-                about
+              about
               </h3>
+              </div>
+
           </header>
           
           <Gallery />
+
+          {/* <footer>
+            <h3
+              className="index-header"
+              onClick={this.handleIndex}
+            > index 
+            </h3>
+          </footer> */}
         </div>
       )
     }

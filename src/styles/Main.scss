@@ -13,10 +13,17 @@
     flex-direction: row;
     margin: 1.5em 1em 2em ;
     justify-content: space-between;
+    // border:2px solid purple;
     .gallery-title{
       margin-right: 5px;
+      // border: 2px solid green;
+    }
+    .index-header{
+      margin-left: 12em;
+      // border: 2px solid red;
     }
     .artist-statement-header {
+      // border: 2px solid red;
       margin-right: 2em;
       background-color: none;
       border: none;
@@ -27,6 +34,23 @@
     .artist-statement-header:hover {
       border: none;
       cursor: default;
+      visibility: visible;
+      color: #C2E5F2;
+    }
+  }
+  .h-c-2{
+    // border:2px solid red;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: -8em;;
+    .index-header {
+      cursor: pointer;
+      margin-right: 1em;
+    }
+    .index-header:hover{
+      border: none;
+      cursor: pointer;
       visibility: visible;
       color: #C2E5F2;
     }
@@ -68,13 +92,28 @@ body {
   }
   .artist-statement-header:hover {
     border: none;
-    cursor: default;
+    cursor: pointer;
     visibility: visible;
     color: #C2E5F2;
   }
 }
 
-
+.h-c-2{
+  // border:2px solid red;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  .index-header {
+    cursor: pointer;
+    margin-right: 2em;
+  }
+  .index-header:hover{
+    border: none;
+    cursor: pointer;
+    visibility: visible;
+    color: #C2E5F2;
+  }
+}
 
 
   

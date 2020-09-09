@@ -20,9 +20,10 @@ const data = [
 			'https://res.cloudinary.com/canelaconpan/image/upload/v1597545068/xime/Nancy_before_Libre_November_2019_famjam.png',
 		audioUrl:
 			'https://res.cloudinary.com/canelaconpan/video/upload/v1598458862/xime/audio/Nancy_before_Libre_Brooklyn_November_2019_eneixg.m4a',
-		personalNote: `This person was living out her middle school fantasies.
+		personalNote: `
+		This person was living out her middle school fantasies.
     I remember getting ready for Libre, I had borrowed the berets from Xime, and wore Vianca’s makeup channeling both of their fearless energies. You couldn’t tell me shit that night.
-    
+    <br/><br/>
     The windows in the venue were foggy due to all the heat produced from the dancing bodies. We left the party early that night and got candies to eat in the car ride home.`
 	},
 	{
@@ -46,14 +47,16 @@ const data = [
 			'https://res.cloudinary.com/canelaconpan/image/upload/v1597545467/xime/Omololu_s_first_time_at_Riis_July_2019_kjrnww.png',
 		audioUrl:
 			'https://res.cloudinary.com/canelaconpan/video/upload/v1597596044/xime/audio/Omololu_s_first_time_at_Riis_July_2019_oyftka.m4a',
-		personalNote: `"oooo she be fire
-    oooo she be sunkissed
-    daughtering the sun, teaching heat her moves
-    glisten glisten glide, pour into the divine
-    Moonlight mes, Moonlight mes, Moonlight mes
-    arise
-    OOF this heat is needed
-    OOF this heat is needed"`
+		personalNote: `
+		<br/>
+		oooo she be fire<br/>
+    oooo she be sunkissed<br/>
+    daughtering the sun, teaching heat her moves<br/>
+    glisten glisten glide, pour into the divine<br/>
+    Moonlight mes, Moonlight mes, Moonlight mes<br/>
+    arise<br/>
+    OOF this heat is needed<br/>
+    OOF this heat is needed<br/>`
 	},
 	{
     portrait: 'Seraah between the Matriarchs',
@@ -86,32 +89,32 @@ const data = [
 			'https://res.cloudinary.com/canelaconpan/image/upload/v1597546567/xime/Wendarlene_at_the_family_photoshoot_Brooklyn_November_2019_cuotyz.png',
 		audioUrl:
 			'https://res.cloudinary.com/canelaconpan/video/upload/v1597596045/xime/audio/Wendarlene_at_the_family_photoshoot_Brooklyn_November_2019_x7y5ht.m4a',
-		personalNote: `The woman in this photo… 
-    was overwhelmed with grief and joy.
-    was processing her mother’s passing 5 days prior.
-    was there to celebrate her daughters 30th birthday.
-    was celebrating motherhood/womanhood/legacy.
-    was healing.
+		personalNote: `<br/>The woman in this photo… <br/>
+    was overwhelmed with grief and joy.<br/>
+    was processing her mother’s passing 5 days prior.<br/>
+    was there to celebrate her daughters 30th birthday.<br/>
+    was celebrating motherhood/womanhood/legacy.<br/>
+    was healing.<br/><br/>
      
-  The woman in this photo…
-    felt blessed.
-    felt in awe of her daughters.
-    felt the love around her.
-           felt conflicted.
-           felt awkward.
-    felt the healing.
+  The woman in this photo…<br/>
+    felt blessed.<br/>
+    felt in awe of her daughters.<br/>
+    felt the love around her.<br/>
+           felt conflicted.<br/>
+           felt awkward.<br/>
+    felt the healing.<br/>
     
-  The woman in this photo…
-    is not alone.
-    is resilient.
-    is resourceful.
-           is sensitive.
-           is raw.
-           is healing.
+  The woman in this photo…<br/>
+    is not alone.<br/>
+    is resilient.<br/>
+    is resourceful.<br/>
+           is sensitive.<br/>
+           is raw.<br/>
+           is healing.<br/>
   
-  The woman in this photo is ME!
-          November 9, 2019
-          Brooklyn, NY
+  The woman in this photo is ME!<br/>
+          November 9, 2019<br/>
+          Brooklyn, NY<br/>
   `
 	},
 	{
@@ -156,7 +159,7 @@ const data = [
 			'https://res.cloudinary.com/canelaconpan/image/upload/v1597546567/xime/Vianca_overlooking_the_city_Brooklyn_July_2019_btiw4x.png',
 		audioUrl:
 			'https://res.cloudinary.com/canelaconpan/video/upload/v1597596045/xime/audio/Vianca_overlooking_the_city_Brooklyn_July_2019_paipeo.m4a',
-		personalNote: `A few days before this photo was taken, my then soon-to-be ex took a photo of me at the beach. He took the photo from below so my ass was the focal point and said “I want you to see you how I see you.” He laughed and so did I, in an effort to hide my discomfort (a habit I’m working to break.) I don’t know if he understood or would understand objectification in romantic relationships to be harmful. I don’t know that he would see the link between persistent objectification and the belief that value is primarily based on physical appearance, or the negative effect that has on a person’s sense of self/worth, but I heard these words as final confirmation that he was incapable of affirming me in other ways just as regularly.
+		personalNote: `<br/>A few days before this photo was taken, my then soon-to-be ex took a photo of me at the beach. He took the photo from below so my ass was the focal point and said “I want you to see you how I see you.” He laughed and so did I, in an effort to hide my discomfort (a habit I’m working to break.) I don’t know if he understood or would understand objectification in romantic relationships to be harmful. I don’t know that he would see the link between persistent objectification and the belief that value is primarily based on physical appearance, or the negative effect that has on a person’s sense of self/worth, but I heard these words as final confirmation that he was incapable of affirming me in other ways just as regularly.<br/><br/>
 
 
 
@@ -181,20 +184,19 @@ const data = [
 			'https://res.cloudinary.com/canelaconpan/image/upload/v1598457071/xime/Cristobal_as_Buffy_on_Halloween_October_2019_w1cfca.png',
 		audioUrl:
 			'https://res.cloudinary.com/canelaconpan/video/upload/v1597596030/xime/audio/Cristobal_as_Buffy_on_Halloween_October_2019_n5qcrz.m4a',
-		personalNote: `There's a lot of possibility
-    And a lot of leg, I might add *wink*
-    In this person's field of vision
-    A memory of a precipice somewhere
-    perhaps some dust inside the boots
-    or under that raggedy wig
-    from falling and rolling around in the dirt for a while
-    But there's a playfulness too,
-    once abandoned.
-    I think I see someone here 
-    who is actively choosing
-    to invest in themselves
-    And they will be grateful for that 
-    a few months down the line.`
+		personalNote: `There's a lot of possibilit<br/>
+    And a lot of leg, I might add *wink*<br/>
+    In this person's field of vision<br/>
+    A memory of a precipice somewhere<br/>
+    perhaps some dust inside the boots<br/>
+    or under that raggedy wig<br/>
+    from falling and rolling around in the dirt for a while<br/>
+    But there's a playfulness too,<br/>
+    I think I see someone here <br/>
+    who is actively choosing<br/>
+    to invest in themselves<br/>
+    And they will be grateful for that <br/>
+    a few months down the line.<br/>`
 	},
 	{
     portrait: 'Iyabo on the night of her performance',
@@ -234,13 +236,14 @@ const data = [
 			'https://res.cloudinary.com/canelaconpan/image/upload/v1597543982/xime/Fudge_at_her_shoot_Brooklyn_April_2019_dfyivg.png',
 		audioUrl:
 			'https://res.cloudinary.com/canelaconpan/video/upload/v1597596030/xime/audio/Fudge_at_her_shoot_Brooklyn_April_2019_alz3lo.mp4',
-		personalNote: `She is so fearless, so strong and so GODDAM TIRED ! 
+		personalNote: `
+		She is so fearless, so strong and so GODDAM TIRED !
 
-    She was killing the game creating her own statement clothing line that empowers many, but overtime she found herself thinking ""Are people gonna like it? 3 years doing fashion shows, but never feeling satisfied. Like ""Why tf am I doing this ?""
+    She was killing the game creating her own statement clothing line that empowers many, but overtime she found herself thinking "Are people gonna like it? 3 years doing fashion shows, but never feeling satisfied. Like Why tf am I doing this ?"
     
      With no real goal in sight beyond saying what tf needed to be said.... she stayed focus on the bts of it all knowing her Soul wanted center of attention. 
     
-    She realized she didnt wanna be known for fashion, and nowhere in the mainstream where people pretend to be who they are and dont get royalties for their shit. There is no Black excellence if the dollar dont look like me.
+    She realized she didnt wanna be known for fashion, and nowhere in the mainstream where people pretend to be who they are and dont get royalties for their shit. There is no Black excellence if the dollar dont look like me.<br/><br/>
     
     Confused and subconsciously lonely, she decided to let go of everything she knew. Knowing that she knew nothing. There was something greater for her soul to emerge into. 
     
@@ -268,19 +271,20 @@ const data = [
 			'https://res.cloudinary.com/canelaconpan/image/upload/v1597545985/xime/Pedro_con_abanico_despues_de_bailar_Callao_Febrero_2020_dodzxb.png',
 		audioUrl:
 			'https://res.cloudinary.com/canelaconpan/video/upload/v1597596044/xime/audio/Pedro_con_abanico_despues_de_bailar_Callao_Febrero_2020_keetv9.ogg',
-		personalNote: `Vengo de muy lejos
-    y estoy aqui mucho tiempo
-    ¿Crees que pertenezco aqui?
-    ¿Te pertenezco?
-    Al fin y al cabo no me tienes, nunca me tendrás.
-    Mi voz, mi llanto, mi sufrimiento, son mios.
-    Mi alegría, mi placer, mi sensualidad, son mios.
-    No soy quien crees
-    No creas quien soy
-    Soy muchas personas
-    Todas soy yo
-    Pero que tanto puede significar para mi?
-    Para alguien más.
+		personalNote: `
+		<br/>Vengo de muy lejos<br/>
+    y estoy aqui mucho tiempo<br/>
+    ¿Crees que pertenezco aqui?<br/>
+    ¿Te pertenezco?<br/>
+    Al fin y al cabo no me tienes, nunca me tendrás.<br/>
+    Mi voz, mi llanto, mi sufrimiento, son mios.<br/>
+    Mi alegría, mi placer, mi sensualidad, son mios.<br/>
+    No soy quien crees<br/>
+    No creas quien soy<br/>
+    Soy muchas personas<br/>
+    Todas soy yo<br/>
+    Pero que tanto puede significar para mi?<br/>
+    Para alguien más.<br/>
     Nacido en sábado de gloria.`
 	},
 	{
@@ -315,25 +319,27 @@ const data = [
 		imgUrl:
 			'https://res.cloudinary.com/canelaconpan/image/upload/v1597545067/xime/Naila_Mami_on_the_roof_March_2019_k7hl2w.png',
 		audioUrl: null, // currently a video - needs to be converted to audio
-		personalNote: `"Perplex
-    A light
-    A soul
-    A gift wrapped too tight with an essay as a label
-    A prayer in a dialect you can never get used to 
-    A hand to hold
-    My ancestors’ wildest dream
-    That bitch that’s gonna tell you about yourself
-    with a tongue pop, a neck roll, eye roll and will
-    occasionally scream period or yaaaaaaaas at the
-    end of a sentence
-    A force to be reckoned with
-    Not taking no for an answer
-    A voice that cannot be silenced
-    Named by allah, caressed by nuestra señora
-    de Guadalupe, protected by spirit
-    A black body
-    A queer body
-    A body"`
+		personalNote: 
+		`<br/><br/>
+		Perplex <br/>
+    A light <br/>
+    A soul <br/>
+    A gift wrapped too tight with an essay as a label <br/>
+    A prayer in a dialect you can never get used to <br/>
+    A hand to hold <br/>
+    My ancestors’ wildest dream <br/>
+    That bitch that’s gonna tell you about yourself <br/>
+    with a tongue pop, a neck roll, eye roll and will <br/>
+    occasionally scream period or yaaaaaaaas at the <br/>
+    end of a sentence <br/>
+    A force to be reckoned with<br/>
+    Not taking no for an answer<br/>
+    A voice that cannot be silenced<br/>
+    Named by allah, caressed by nuestra señora<br/>
+    de Guadalupe, protected by spirit<br/>
+    A black body<br/>
+    A queer body<br/>
+    A body`
 	},
 	{
     portrait: 'Sonny at his temporary home',
@@ -392,11 +398,12 @@ const data = [
 			'https://res.cloudinary.com/canelaconpan/image/upload/v1597545075/xime/Nancy__cigarette_Cherry_Grove_May_2019_qss5qy.png',
 		audioUrl:
 			'https://res.cloudinary.com/canelaconpan/video/upload/v1598458870/xime/audio/Nancy_cigarette_Cherry_Grove_May_2019_ey47re.m4a',
-		personalNote: `This person is la Nancy Johanna Villalobos.
+		personalNote: 
+		`<br/>
+		This person is la Nancy Johanna Villalobos.
     She feels the most confident at the beach naked and jiggly. She feels the most beautiful sun kissed and brown. She feels the most safe when she can laugh and cry.
     We ended our day watching the sunset on a dock eating sandy sandwiches and reminiscing.
-    
-    
+    <br/><br/>
     
     I never feel shy in from the of the camera when the person taking the picture loves me. It’s like they see me for who I am, una mujer en toda su gloria.`
 	},
@@ -409,27 +416,28 @@ const data = [
 			'https://res.cloudinary.com/canelaconpan/image/upload/v1597543828/xime/Edua_after_their_performance_March_2019_kgqnw6.png',
 		audioUrl:
 			'https://res.cloudinary.com/canelaconpan/video/upload/v1598457680/xime/audio/Edua_after_their_performance_Queens_March_2019_jvkasz.m4a',
-		personalNote: `"eduaaaaa
-    Esta es una edua DECIDIDA.
+		personalNote: `<br/><br/>
+		"eduaaaaa
+    Esta es una edua DECIDIDA. <br/>
     
-    A esta edua se le desplomó el suelo 
-    y  esa caída libre la arrojó al momento preciso que esta imagen captura.
-    Con tierra en el ombligo.
-    Momentos después de entregar las uñas a un hallazgo performance,
-    y días antes de trasladar su vida de nuyork a la montaña, circasia.
+    A esta edua se le desplomó el suelo <br/><br/>
+    y  esa caída libre la arrojó al momento preciso que esta imagen captura. <br/>
+    Con tierra en el ombligo.<br/>
+    Momentos después de entregar las uñas a un hallazgo performance,<br/>
+    y días antes de trasladar su vida de nuyork a la montaña, circasia.<br/>
     
-    Esa casi-sonrisa
-    esconde entre las muelas miedos, incertidumbres, morriña, y felicidad.  
-    y así mismita tragando entre mugre mil emociones
-    es una edua decidida, dando pasos firmes, pasos a ciegas.
+    Esa casi-sonrisa<br/>
+    esconde entre las muelas miedos, incertidumbres, morriña, y <br/>felicidad.  <br/>
+    y así mismita tragando entre mugre mil emociones<br/>
+    es una edua decidida, dando pasos firmes, pasos a ciegas.<br/>
+    <br/>
+    Tras esta cámara está su familia, <br/>
+    y la nostalgia.<br/>
+    Personas que se entre-acogieron para cuidarse y cultivarse.<br/>
+    hermanas ramas de un resistente árbol tropical que echó raíz en la <br/>tundra.<br/>
+    tras esta imagen se abrazan fuerte en gratitud.<br/><br/>
     
-    Tras esta cámara está su familia, 
-    y la nostalgia.
-    Personas que se entre-acogieron para cuidarse y cultivarse.
-    hermanas ramas de un resistente árbol tropical que echó raíz en la tundra.
-    tras esta imagen se abrazan fuerte en gratitud.
-    
-    En este retrato figura la despedida y las últimas visiones de un CAPITULAZO fundamental en la vida e historia de edua. 
+    En este retrato figura la despedida y las últimas visiones de un <br/>CAPITULAZO fundamental en la vida e historia de edua. <br/>
     De lo que viene solo figura la opacidad. 
     `
 	},
@@ -454,18 +462,18 @@ const data = [
 			'https://res.cloudinary.com/canelaconpan/image/upload/v1597544671/xime/Lolu_smoke_break_Brooklyn_December_2019_szmlz2.png',
 		audioUrl:
 			'https://res.cloudinary.com/canelaconpan/video/upload/v1597596043/xime/audio/Lolu_smoke_break_Brooklyn_December_2019_cr02pa.m4a',
-		personalNote: `it slips out my ssss mouth so slippery
-    the thing the deed the riddle the conundrum
-    riddle me this
-    if I own my time, am I my own(her) or am i a theif
-    riddle me this riddle me this riddle me this
-    me and my sisTAR me and my sisTAR  me and my sisTAR
-    xime, xime
-    we decided, we took action, we planted,
-    we will sew and we will see
-    either way, we’ll be well fed, so on rooftops
-    we proclaimed that these were our lives and we Were going to do the damn thing and that we were going 
-    to heist our way into the divinity of our mission 
+		personalNote: `<br/>it slips out my ssss mouth so slippery<br/>
+    the thing the deed the riddle the conundrum<br/>
+    riddle me this<br/>
+    if I own my time, am I my own(her) or am i a theif<br/>
+    riddle me this riddle me this riddle me this<br/>
+    me and my sisTAR me and my sisTAR  me and my sisTAR<br/>
+    xime, xime<br/>
+    we decided, we took action, we planted,<br/>
+    we will sew and we will see<br/>
+    either way, we’ll be well fed, so on rooftops<br/>
+    we proclaimed that these were our lives and we Were going to do the damn thing and that we were going <br/>
+    to heist our way into the divinity of our mission <br/>
     aaamiiooo asêooo`
 	},
 	{
@@ -532,17 +540,17 @@ const data = [
 			'https://res.cloudinary.com/canelaconpan/image/upload/v1597546180/xime/Sofia_en_el_techo_Brooklyn_June_2019_hv5pt5.png',
 		audioUrl:
 			'https://res.cloudinary.com/canelaconpan/video/upload/v1597596045/xime/audio/Sofia_en_el_techo_Brooklyn_June_2019_bsu7hm.mp4',
-		personalNote: `I remember for a moment I wanted to move to NY. That’s the moment Ximena took that photo, it’s been a year to be exact, and so many things have changed our lives, many lives have changed forever. I could not imagine the things that were gonna happen, all I knew is that i needed to return back home and be back in my bed. I needed to be back with my friends in Mexico City, that’s where I live now. 
+		personalNote: `<br/>I remember for a moment I wanted to move to NY. That’s the moment Ximena took that photo, it’s been a year to be exact, and so many things have changed our lives, many lives have changed forever. I could not imagine the things that were gonna happen, all I knew is that i needed to return back home and be back in my bed. I needed to be back with my friends in Mexico City, that’s where I live now. <br/><br/>
 
-    Yo creo que la vida cambio demasiado, que te diría a ti socia…lo primero que te diría es que no dejes de hacer el trabajo que estas haciendo, no dejes de tejer alianzas, las cuales me están ayudando a mi a crecer como persona y como mujer pero también estoy aprendiendo a conocer otras vidas y a otras hermanas a través del trabajo que se esta haciendo. Nunca pensé que el trabajo que estoy haciendo fuera a ser reconocido, pero ya en este momento, ya ni me interesa. Me interesa mas ser reconocida por mi comunidad, mis hermanas, y aquellos los cuales he escogido que sean parte de mi vida como tu Ximena. Gracias gracias por darme alojo las veces que he llegado a Nueva York, gracias por darme alojo en tu casa, gracias por las platicas que hemos tenido en tu cocina. 
+    Yo creo que la vida cambio demasiado, que te diría a ti socia…lo primero que te diría es que no dejes de hacer el trabajo que estas haciendo, no dejes de tejer alianzas, las cuales me están ayudando a mi a crecer como persona y como mujer pero también estoy aprendiendo a conocer otras vidas y a otras hermanas a través del trabajo que se esta haciendo. Nunca pensé que el trabajo que estoy haciendo fuera a ser reconocido, pero ya en este momento, ya ni me interesa. Me interesa mas ser reconocida por mi comunidad, mis hermanas, y aquellos los cuales he escogido que sean parte de mi vida como tu Ximena. Gracias gracias por darme alojo las veces que he llegado a Nueva York, gracias por darme alojo en tu casa, gracias por las platicas que hemos tenido en tu cocina. <br/><br/>
     
-    Lo único que te puedo decir Sofia es que la vida va a cambiar mucho, y una tiene que ser fuerte.  
+    Lo único que te puedo decir Sofia es que la vida va a cambiar mucho, y una tiene que ser fuerte.  <br/><br/>
     
-    I want to recognize the efforts of so many people now, and then to make a better trans future, not only for ourselves but for others. Even under these circumstances, our community, my trans community will make space and time to thrive because we deserve a better future for us, as elder women for our younger generation, seeking hope in such a time of uncertainty or I just cannot imagine living a life without any physical contact as a young adult.
+    I want to recognize the efforts of so many people now, and then to make a better trans future, not only for ourselves but for others. Even under these circumstances, our community, my trans community will make space and time to thrive because we deserve a better future for us, as elder women for our younger generation, seeking hope in such a time of uncertainty or I just cannot imagine living a life without any physical contact as a young adult.<br/><br/>
     
-    I want to tell myself that things are going to be better, and that I shouldn’t give up and I should continue doing the work that I do. I’m playing a little bit of rancheras cause that’s how I feel, it’s a day after a new moon. 
+    I want to tell myself that things are going to be better, and that I shouldn’t give up and I should continue doing the work that I do. I’m playing a little bit of rancheras cause that’s how I feel, it’s a day after a new moon. <br/><br/>
     
-    I wanna encourage more people to remind yourselves that life has some strange surprises and that we should just continue to live our lives and those with privilege to give us a little bit of access and recognize that we exist and that we are trying hard to be afloat and survive in such a chaotic time. 
+    I wanna encourage more people to remind yourselves that life has some strange surprises and that we should just continue to live our lives and those with privilege to give us a little bit of access and recognize that we exist and that we are trying hard to be afloat and survive in such a chaotic time. <br/><br/>
     
     Gracias Ximena, for taking this photo and reminding me that in a year so many things can change, and I’m actually beyond excited for the future. For my future. For the trans future. For our queer future that we are building together, thank you, I hope to see you soon and hug you again.`
 	},
@@ -576,28 +584,29 @@ const data = [
 			'https://res.cloudinary.com/canelaconpan/image/upload/v1597545466/xime/Oscar_red_nails_Brooklyn_March_2019_ewewra.png',
 		audioUrl:
 			'https://res.cloudinary.com/canelaconpan/video/upload/v1597596044/xime/audio/Oscar_red_nails_Brooklyn_March_2019_tikn9p.mp4',
-		personalNote: `Faggot
-    Maricon
-    Trans Femme
-    Non Binary
-    Genero Disidente
+		personalNote: `<br/>
+		Faggot<br/>
+    Maricon<br/>
+    Trans Femme<br/>
+    Non Binary<br/>
+    Genero Disidente<br/>
+    <br/>
+    A esta persona le gusta tener las uñas largas y rojas como garras filosas.<br/><br/>
     
-    A esta persona le gusta tener las uñas largas y rojas como garras filosas.
+    Con su pelo largo, unos hoops, y un labial rojo de resistencia debajo de su bigote.<br/><br/>
     
-    Con su pelo largo, unos hoops, y un labial rojo de resistencia debajo de su bigote.
+    Lleva una rosa emergiendo en el pecho; floreciendo a pesar de su jaula.<br/><br/>
     
-    Lleva una rosa emergiendo en el pecho; floreciendo a pesar de su jaula.
+    Elle (they/them) o a veces Ella (she/her) se aterriza en pensar que el mundo va furiosamente en espiral.<br/><br/>
     
-    Elle (they/them) o a veces Ella (she/her) se aterriza en pensar que el mundo va furiosamente en espiral.
+    Entre galaxias y universos, nosotres solo somos microorganismos, bacteria, células corporales.<br/><br/>
     
-    Entre galaxias y universos, nosotres solo somos microorganismos, bacteria, células corporales.
+    Y por suerte seguimos en gravedad, en esta espiral, con las energías que mas nos atraen y nos alimentan.<br/><br/>
     
-    Y por suerte seguimos en gravedad, en esta espiral, con las energías que mas nos atraen y nos alimentan.
+    Y aun siendo particulas, granos en el espacio, somos cargadas con potencial atómica. <br/><br/>
     
-    Y aun siendo particulas, granos en el espacio, somos cargadas con potencial atómica. 
-    
-    Que nuestra presencia derrumbe y devasta
-    Que nuestras ofrendas cultiven y reconstruian.
+    Que nuestra presencia derrumbe y devasta<br/>
+    Que nuestras ofrendas cultiven y reconstruian.<br/><br/>
     
     Y que alcanzemos, desde nuestras imaginaciones y en lo material, a un mas allá de nuestro presente.`
 	},
