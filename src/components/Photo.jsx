@@ -87,8 +87,6 @@ class Photo extends PureComponent {
       </div>
       )
     }
-
-    
   }
 }
 
