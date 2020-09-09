@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import Main from './components/Main';
 import LandingPage from './components/LandingPage';
+import Heading  from './components/Heading'
 
 export default class App extends Component {
   constructor(props) {
@@ -55,6 +56,7 @@ export default class App extends Component {
       }
       return (
         <div className="App">
+              <Heading/>
               <Main  />
         </div>
     )
