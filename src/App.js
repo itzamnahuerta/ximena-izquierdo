@@ -56,7 +56,7 @@ export default class App extends Component {
       }
       return (
         <div className="App">
-              <Heading/>
+              {/* <Heading/> */}
               <Main  />
         </div>
     )
