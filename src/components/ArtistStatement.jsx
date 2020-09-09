@@ -30,8 +30,10 @@ export default class ArtistStatement extends Component {
             <div className="a-s-h"> 
               <h1> Se Que Fue Así Porque Estuve Allí </h1> 
               <button id="btn-icon" onClick={this.props.handleArtistStatement} > 
-                <HiOutlineArrowNarrowLeft style={{fontSize:"2em"}}/>
-            
+                {/* <HiOutlineArrowNarrowLeft style={{fontSize:"2em"}}/> */}
+                {/* <div class="backArrowContainer"><g><svg width="150px" height="50px" viewBox="0 0 150 50" version="1.1"><g id="Groups" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square"><g id="Artboard" stroke="#232b2b"><g><path d="M149.5,25.5 L48.5,25.5," id="undefined"></path></g><g><g id="undefined" transform="translate(48, 10)"><path d="M0.5,15.5 L15.0086181,0.991381871" id="upperLine"></path><path d="M0.5,15.5 L15.5,30.5" id="lowerLine"></path></g></g></g></g></svg></g></div> */}
+                
+                <div class="arrow"></div>
               </button>
             </div>
 
@@ -79,7 +81,7 @@ export default class ArtistStatement extends Component {
                   onClick={this.toEs}> ES </a>
               </div> 
             <div className="more-info"> 
-              <p> For more information about this project you can visit www.ximexime.com or email ximeizquierdougaz@gmail.com. </p>
+              <p> For more information about this project you can visit <a href="www.ximexime.com">www.ximexime.com </a> or email ximeizquierdougaz@gmail.com. </p>
               <p> Website coded by Itzamna Huerta</p>
             </div>
         </div>
