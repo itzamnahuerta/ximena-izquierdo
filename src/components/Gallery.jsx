@@ -24,44 +24,42 @@ export default class Gallery extends Component {
     let photoArr = [];
     if (photos) {
       photos.map( (photo, id) => {
-      photoArr.push(
+        photoArr.push(
           <div 
             key={id} 
             className={photo.className} 
             onClick={() => {this.handlePhoto(photo)}}
           >
-            <ReactImageAppear 
-            
+          <ReactImageAppear 
             isPhotoClicked={this.state.isPhotoClicked}
             src={photo.imgUrl}
             animation="fadeIn"
             animationDuration="1s"
             showLoader={false}
-            />
+          />
           </div>
         )
-      }
-    )
- }
-    
-    
-  
-    return (
+      });
+    }
 
-      <div className="gallery-parent-container">
-        {!this.state.isPhotoClicked && (
-          photoArr
-        )}   
+    if(this.state.isPhotoClicked === true) {
+      return(
+        <Photo
+          showPhotoInfo={this.state.isPhotoClicked}
+          handlephoto={this.handlePhoto}
+          data={this.state.photo} 
+        />
+      )
+    } else {
+      return (
+        <div className="gallery-parent-container">
+          {!this.state.isPhotoClicked && (
+            photoArr
+          )} 
 
-        {this.state.isPhotoClicked && (
-          <Photo
-            showPhotoInfo={this.state.isPhotoClicked}
-            handlephoto={this.handlePhoto}
-            data={this.state.photo} 
-            />
-        )}
-      </div>
-
-    )
+          
+        </div>
+      )
+    }
   }
 }
