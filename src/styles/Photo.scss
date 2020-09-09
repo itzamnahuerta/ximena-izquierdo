@@ -12,10 +12,9 @@
     // border: 3px solid red;
     visibility: visible;
     width: 95% !important;
-    // height: 100% !important;
-    position: absolute;
+    height: 100% !important;
+    position: relative;
     left: 1%;
-    z-index: 99;
     display:flex;
     flex-direction: column;
     .wrapper-0{
