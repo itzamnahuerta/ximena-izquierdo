@@ -72,7 +72,8 @@ class Photo extends PureComponent {
           
                   </div> 
                   <div className="c-2"> 
-                    <p className="personal-note"> {photoInfo.personalNote} </p>
+                    <div dangerouslySetInnerHTML={{ __html: photoInfo.personalNote }} />
+                    {/* <p className="personal-note"> {photoInfo.personalNote} </p> */}
                   </div>
                 </div>
   

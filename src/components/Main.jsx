@@ -2,8 +2,7 @@ import React from 'react';
 import '../styles/Main.scss';
 import ArtistStatement from './ArtistStatement';
 import Gallery from './Gallery';
-
-// https://stackoverflow.com/questions/50490304/how-to-make-audio-autoplay-on-chrome // for autoplay audio
+import Index from './Index';
 
 class Main extends React.Component {
   constructor(props) {
@@ -11,6 +10,7 @@ class Main extends React.Component {
 
     this.state = {
       isArtistStatementClicked: false,
+      isIndexClicked: false,
       currentTitle: "se que fue así porque estuve allí"
     }
   }
@@ -29,6 +29,9 @@ class Main extends React.Component {
     this.setState({isArtistStatementClicked:!this.state.isArtistStatementClicked})
   }
 
+  handleIndex = () => {
+    this.setState({isIndexClicked:!this.state.isIndexClicked})
+  }
 
   render() {
     if(this.state.isArtistStatementClicked === true) {
@@ -38,7 +41,14 @@ class Main extends React.Component {
             handleArtistStatement={this.handleArtistStatement}
           />
       )
-    } else {
+    } else  if(this.state.isIndexClicked) {
+      return(
+        <Index
+          isIndexClicked={this.state.isIndexClicked}
+          handleIndex={this.handleIndex}
+        />
+      )
+    }  else {
  
       return (
         <div>
@@ -46,6 +56,12 @@ class Main extends React.Component {
               <div className="gallery-title">  
                <h3 >{this.state.currentTitle}</h3 >
               </div>
+              
+              {/* <div
+                className="index-header"
+                onClick={this.handleIndex}
+              > index 
+              </div> */}
               <h3 
                 className="artist-statement-header" 
                 onClick={this.handleArtistStatement}
