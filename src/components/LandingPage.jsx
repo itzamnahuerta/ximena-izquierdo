@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactImageAppear from 'react-image-appear';
 import '../styles/LandingPage.scss';
 
 import artistImg from '../assets/artist-img/xime_retrato.PNG'
@@ -43,7 +44,13 @@ import artistImg from '../assets/artist-img/xime_retrato.PNG'
       </div>
 
       <div className="f-item artist-img-container"> 
-        <img className="artist-img" src={artistImg} />
+      <ReactImageAppear 
+            className="artist-img"
+            src={artistImg}
+            animation="fadeIn"
+            animationDuration="1s"
+            showLoader={false}
+          />
       </div>
   
 
