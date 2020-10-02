@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.3f6fd974.chunk.css",
-    "main.js": "/static/js/main.98a62933.chunk.js",
-    "main.js.map": "/static/js/main.98a62933.chunk.js.map",
+    "main.css": "/static/css/main.80d42bb8.chunk.css",
+    "main.js": "/static/js/main.45ccdbc1.chunk.js",
+    "main.js.map": "/static/js/main.45ccdbc1.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c99ad947.js",
     "runtime-main.js.map": "/static/js/runtime-main.c99ad947.js.map",
     "static/js/2.7f18786c.chunk.js": "/static/js/2.7f18786c.chunk.js",
     "static/js/2.7f18786c.chunk.js.map": "/static/js/2.7f18786c.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.1091a3d1d4233bbf1f030a175db356d3.js": "/precache-manifest.1091a3d1d4233bbf1f030a175db356d3.js",
+    "precache-manifest.e7d44061e17d12cb26e1375cd2d8bf92.js": "/precache-manifest.e7d44061e17d12cb26e1375cd2d8bf92.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.3f6fd974.chunk.css.map": "/static/css/main.3f6fd974.chunk.css.map",
+    "static/css/main.80d42bb8.chunk.css.map": "/static/css/main.80d42bb8.chunk.css.map",
     "static/js/2.7f18786c.chunk.js.LICENSE.txt": "/static/js/2.7f18786c.chunk.js.LICENSE.txt",
     "static/media/Akir_with_roses_for_Pink_Bandanazz_Brooklyn_April_2019.png": "/static/media/Akir_with_roses_for_Pink_Bandanazz_Brooklyn_April_2019.ca026294.png",
     "static/media/Akir_with_roses_for_Pink_Bandanazz_Brooklyn_April_2019.mp4": "/static/media/Akir_with_roses_for_Pink_Bandanazz_Brooklyn_April_2019.d10d0df4.mp4",
@@ -97,12 +97,12 @@
     "static/media/Zion_in_Blue_Harlem_January_2020.png": "/static/media/Zion_in_Blue_Harlem_January_2020.a249cd43.png",
     "static/media/Zion_in_Chinatown_Manhattan_December_2019.m4a": "/static/media/Zion_in_Chinatown_Manhattan_December_2019.7e002005.m4a",
     "static/media/Zion_in_Chinatown_Manhattan_December_2019.png": "/static/media/Zion_in_Chinatown_Manhattan_December_2019.fb001dee.png",
-    "static/media/xime_retrato.PNG": "/static/media/xime_retrato.d2107732.PNG"
+    "static/media/xime_retrato.PNG": "/static/media/xime_retrato.655d7ace.PNG"
   },
   "entrypoints": [
     "static/js/runtime-main.c99ad947.js",
     "static/js/2.7f18786c.chunk.js",
-    "static/css/main.3f6fd974.chunk.css",
-    "static/js/main.98a62933.chunk.js"
+    "static/css/main.80d42bb8.chunk.css",
+    "static/js/main.45ccdbc1.chunk.js"
   ]
 }
