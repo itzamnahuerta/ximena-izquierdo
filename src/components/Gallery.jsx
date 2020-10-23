@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import Photo from './Photo'; 
-import ReactImageAppear from 'react-image-appear';
+import { LazyLoadImage, trackWindowScroll } 
+  from 'react-lazy-load-image-component';
 import '../styles/Gallery.scss';
 import data from '../assets/data/data';
 
-export default class Gallery extends Component {
+class Gallery extends Component {
   constructor() {
     super();
 
@@ -20,6 +21,8 @@ export default class Gallery extends Component {
   }
 
   render() {
+    const {scrollPosition} = this.props;
+
     let photos = this.state.data;
     let photoArr = [];
     if (photos) {
@@ -30,12 +33,11 @@ export default class Gallery extends Component {
             className={photo.className} 
             onClick={() => {this.handlePhoto(photo)}}
           >
-          <ReactImageAppear 
+          <LazyLoadImage 
             isPhotoClicked={this.state.isPhotoClicked}
+            alt={photo.portrait}
             src={photo.imgUrl}
-            animation="fadeIn"
-            animationDuration="1s"
-            showLoader={false}
+            effect="opacity"
           />
           </div>
         )
@@ -48,6 +50,7 @@ export default class Gallery extends Component {
           showPhotoInfo={this.state.isPhotoClicked}
           handlephoto={this.handlePhoto}
           data={this.state.photo} 
+          scrollPosition={scrollPosition}
         />
       )
     } else {
@@ -55,11 +58,12 @@ export default class Gallery extends Component {
         <div className="gallery-parent-container">
           {!this.state.isPhotoClicked && (
             photoArr
-          )} 
-
-          
+          )}
         </div>
       )
     }
   }
 }
+
+
+export default trackWindowScroll(Gallery);
