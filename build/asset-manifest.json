@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.6fedd3d6.chunk.css",
+    "main.css": "/static/css/main.77dedd70.chunk.css",
     "main.js": "/static/js/main.67498476.chunk.js",
     "main.js.map": "/static/js/main.67498476.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c99ad947.js",
@@ -8,9 +8,9 @@
     "static/js/2.2cfa2c4c.chunk.js": "/static/js/2.2cfa2c4c.chunk.js",
     "static/js/2.2cfa2c4c.chunk.js.map": "/static/js/2.2cfa2c4c.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.e5c73d37792c98232cbf7ecbe881f07d.js": "/precache-manifest.e5c73d37792c98232cbf7ecbe881f07d.js",
+    "precache-manifest.07c5e40f3bb3a5157e1ec7d71620d4d9.js": "/precache-manifest.07c5e40f3bb3a5157e1ec7d71620d4d9.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.6fedd3d6.chunk.css.map": "/static/css/main.6fedd3d6.chunk.css.map",
+    "static/css/main.77dedd70.chunk.css.map": "/static/css/main.77dedd70.chunk.css.map",
     "static/js/2.2cfa2c4c.chunk.js.LICENSE.txt": "/static/js/2.2cfa2c4c.chunk.js.LICENSE.txt",
     "static/media/Akir_with_roses_for_Pink_Bandanazz_Brooklyn_April_2019.mp4": "/static/media/Akir_with_roses_for_Pink_Bandanazz_Brooklyn_April_2019.d10d0df4.mp4",
     "static/media/Alfie_in_the_corset_Brooklyn_March_2019.m4a": "/static/media/Alfie_in_the_corset_Brooklyn_March_2019.cabe6ffd.m4a",
@@ -60,7 +60,7 @@
   "entrypoints": [
     "static/js/runtime-main.c99ad947.js",
     "static/js/2.2cfa2c4c.chunk.js",
-    "static/css/main.6fedd3d6.chunk.css",
+    "static/css/main.77dedd70.chunk.css",
     "static/js/main.67498476.chunk.js"
   ]
 }
