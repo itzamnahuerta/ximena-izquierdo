@@ -52,18 +52,18 @@ class Main extends React.Component {
  
       return (
         <div>
-          <header className="gallery-header"> 
-              <div className="gallery-title">  
+          <header className="gallery-container"> 
+              <div className="project-title">  
                <h3 >{this.state.currentTitle}</h3 >
               </div>
-              <div className="h-c-2">
+              <div className="nav-container">
               <h3
-              className="index-header"
+              className="hover hover-1 index-header"
               onClick={this.handleIndex}
               > index 
               </h3>
               <h3 
-                className="artist-statement-header" 
+                className="hover hover-1 about-header" 
                 onClick={this.handleArtistStatement}
               > 
               about
@@ -73,14 +73,6 @@ class Main extends React.Component {
           </header>
           
           <Gallery />
-
-          {/* <footer>
-            <h3
-              className="index-header"
-              onClick={this.handleIndex}
-            > index 
-            </h3>
-          </footer> */}
         </div>
       )
     }
