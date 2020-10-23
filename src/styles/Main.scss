@@ -1,66 +1,58 @@
 @media (min-width:320px)  { 
   /* smartphones, iPhone, portrait 480x320 phones */ 
 
-  body {
-    background-color: white;
-  }
-  
-  .gallery-header {
-    // border: 3px solid red;
+  .gallery-container {
+    // border: 1p x solid red;
     width: 100% !important;
     height: 100px;
     position: relative;
     top: 0;
     display: flex;
     flex-direction: row;
-    // margin: 1.5em 1em 2em ;
     padding: 1.5em 1em 2em ;
     justify-content: space-between;
-    .g-item {
-      border: 2px solid purple;
-    }
-    .gallery-title{
+
+    .project-title{
+      width: 30%;
       margin-right: 5px;
       // border: 2px solid green;
+
     }
-    .index-header{
-      margin-left: 12em;
-      // border: 2px solid red;
-    }
-    .artist-statement-header {
-      // border: 2px solid red;
-      margin-right: 2em;
-      background-color: none;
-      border: none;
-      font-family: Arial, Helvetica, sans-serif;
-      font-family: 14pt;
-      cursor: default;
-    }
-    .artist-statement-header:hover {
-      border: none;
-      cursor: default;
-      visibility: visible;
-      color: #C2E5F2;
-    }
-  }
-  .h-c-2{
-    // border:2px solid red;
-    display:flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-left: -8em;;
-    .index-header {
-      cursor: pointer;
-      margin-right: 1em;
-    }
-    .index-header:hover{
-      border: none;
-      cursor: pointer;
-      visibility: visible;
-      color: #C2E5F2;
+    .nav-container{
+      // border:2px solid red;
+      display:flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-left: -8em;
+      .hover:hover {
+        font-style: italic;
+        &:before,
+        &:after {
+          font-style: italic;
+        }
+      }
+      .index-header {
+        cursor: default;
+        margin-right: 1em;
+      }
+      .index-header:hover{
+        border: none;
+        cursor: default;
+        visibility: visible;
+      }
+      .about-header {
+        cursor: default;
+        margin-right: 1em;
+      }
+      .about-header:hover{
+        border: none;
+        cursor: default;
+        visibility: visible;
+      }
     }
   }
 }
+
 @media (min-width:481px)  { 
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
 }
@@ -73,56 +65,46 @@
 }
 @media (min-width:1025px) { 
   /* big landscape tablets, laptops, and desktops */ 
-  
-body {
-  background-color: white;
-}
-
-.gallery-header {
-  width: 100% !important;
-  position: relative;
-  top: 0;
-  display: flex;
-  flex-direction: row;
-  margin: 1.5em 1em 2em ;
-  justify-content: space-between;
-
-  .artist-statement-header {
-    margin-right: 2em;
-    background-color: none;
-    border: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-family: 2em;
-    cursor: default;
-  }
-  .artist-statement-header:hover {
-    border: none;
-    cursor: pointer;
-    visibility: visible;
-    color: #C2E5F2;
-  }
-}
-
-.h-c-2{
-  // border:2px solid red;
-  display:flex;
-  justify-content: flex-end;
-  align-items: center;
-  .index-header {
-    cursor: pointer;
-    margin-right: 2em;
-  }
-  .index-header:hover{
-    border: none;
-    cursor: pointer;
-    visibility: visible;
-    color: #C2E5F2;
+  .gallery-container {
+    width: 97% !important;
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    margin: .5em 0 2em ;
+    justify-content: space-between;
+    .nav-container {
+      margin-right: 3em;
+      display:flex;
+      justify-content: flex-end;
+      align-items: center;
+      .hover:hover {
+        font-style: italic;
+        &:before,
+        &:after {
+          font-style: italic;
+        }
+      }
+      .index-header {
+        cursor: default;
+      }
+      .index-header:hover{
+        border: none;
+        cursor: default;
+        visibility: visible;
+      }
+      .about-header {
+        cursor: default;
+      }
+      .about-header:hover{
+        border: none;
+        cursor: default;
+        visibility: visible;
+      }
+    }
   }
 }
 
-
-  
-}
 @media (min-width:1281px) { 
   /* hi-res laptops and desktops */ 
 
