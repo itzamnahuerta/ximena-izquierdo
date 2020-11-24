@@ -78,7 +78,7 @@ export default class ArtistStatement extends Component {
                   onClick={this.toEs}> ES </a>
               </div> 
             <div className="more-info"> 
-              <p> For more information about this project you can visit <a href="www.ximexime.com">www.ximexime.com </a> or email ximeizquierdougaz@gmail.com. </p>
+              <p> For more information about this project you can visit <a href="https://ximexime.com/">www.ximexime.com </a> or email ximeizquierdougaz@gmail.com. </p>
               <p> Website coded by Itzamna Huerta</p>
             </div>
         </div>
