@@ -8,8 +8,8 @@
     padding: 0;
   }
   .photo-container {
-    background-color: white;
-    // border: 3px solid red;
+    // background-color: orange;
+    border: 8px solid red;
     visibility: visible;
     width: 95% !important;
     height: 100% !important;
@@ -29,10 +29,10 @@
       }
     }
     .portrait-img {
-      // border: 3px solid green;
+      border: 3px solid green;
       margin-top: 2em;
       margin-left: 2em;
-      width:90%;
+      width:80%;
       height:60%;
       display: flex;
       justify-content: center;
