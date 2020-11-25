@@ -17,7 +17,7 @@
     display:flex;
     flex-direction: column;
     .wrapper-0{
-      // border: 2px solid red;
+      // border: 2px solid green;
       margin-left: auto;
       .gallery{
         
@@ -41,7 +41,6 @@
       max-width: 100%;
       max-height: 100%;
       object-fit: contain;
-
     }
     .content {
       // border: 2px solid red;
@@ -50,7 +49,7 @@
       align-items: stretch;
       height: 450px;
       flex-grow: 3;
-      margin-top: 8em;
+      margin-top: 3em;
       
 
       .wrapper-1 {
