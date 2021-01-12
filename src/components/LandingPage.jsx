@@ -76,7 +76,7 @@ import artistImg from '../assets/artist-img/xime_retrato.PNG'
 
           <div className="f-item navigation-container"> 
             <div>
-              <button className="read-more opt-btn" onClick={props.handleReadMore} > 
+              <button className="read-more opt-btn" onClick={props.toggleReadMore} > 
               <p> read more </p>
               </button>
             </div>
@@ -89,7 +89,7 @@ import artistImg from '../assets/artist-img/xime_retrato.PNG'
           </div>
 
 
-          <div className={props.displayReadMore ? "read-more-container-open" : "read-more-container-closed"}> 
+          <div className={props.readMore ? "read-more-container-open" : "read-more-container-closed"}> 
           {props.lang === "es" && (
             <div> 
             De peque, mi madre no dejaba que nadie se sentara en mi cama. Decía que era un lugar sagrado. Cuando llegaban mis amigues, teníamos que sentarnos en la sala desde donde ella nos podía ver. A medida que crecía, me di cuenta de lo diferente que nos sentíamos acerca de lo sagrado. Ya de adolescente y en busca de espejos, buscando familia, viví en muchos hogares. Durante mucho tiempo, fui demasiado tímide para tomar fotografías de las personas que me rodeaban. Tomé muchas fotos de nuestras cosas, la sala que compartía con mis roomates, el baño donde nos preparamos para enfrentar un mundo que nos odiaba, cocinas, camas, ventanas.
