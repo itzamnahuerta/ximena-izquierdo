@@ -1,62 +1,56 @@
-import React, {Component} from 'react';
+import React, {useState} from 'react';
 import './App.css';
-import Main from './components/Main';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+
+// pages 
+import Main from './components/Main'; // update to home component
 import LandingPage from './components/LandingPage';
 
-export default class App extends Component {
-  constructor(props) {
-    super(props);
 
-    this.state = {
-      displayLandingPage: true,
-      displayReadMore: false,
-      lang: 'en'
-    }
-  }
+function App() {
+  // landing page "read more" btn toggle
+  const [readMore, setReadMore] = useState(false);
+  const toggleReadMore = () => setReadMore(!readMore);
 
-  handleLandingPage = () => {
-    if( this.state.displayLandingPage === true ) {
-      this.setState({ displayLandingPage: false})
-    } else if ( this.state.displayLandingPage === false) {
-      this.setState({ displayLandingPage: true})
-    }
-  }
+  // landing page "language" btn toggle
+  const [lang, setLang] = useState('en')
 
-  handleReadMore = () => {
-    if( this.state.displayReadMore === true ) {
-      this.setState({ displayReadMore: false})
-    } else if ( this.state.displayReadMore === false) {
-      this.setState({ displayReadMore: true})
-    }
-  }
-
-  toEs = () => {
-    this.setState({lang: 'es'})
+  const toEs = () => {
+    setLang('es')
   }
   
-  toEng = () => {
-    this.setState({lang:'en'})
+  const toEng = () => {
+    setLang('en')
   }
 
-  render() {
-      if(this.state.displayLandingPage === true) {
-        return (
-          <React.Fragment>
-          <LandingPage 
-                handleLandingPage={this.handleLandingPage} 
-                handleReadMore={this.handleReadMore}
-                displayReadMore={this.state.displayReadMore}
-                lang={this.state.lang}
-                toEs={this.toEs}
-                toEng={this.toEng}
+  return(
+    <div className="App">
+      <Router>
+        <Switch>
+          <Route path="/gallery">
+          </Route>
+
+          <Route path="/home">
+            <Main />
+          </Route>
+
+          <Route path="/">
+            <LandingPage 
+              toggleReadMore={toggleReadMore}
+              readMore={readMore}
+              lang={lang}
+              toEs={toEs}
+              toEng={toEng}
             />
-          </React.Fragment>
-        )
-      }
-      return (
-        <div className="App">
-              <Main  />
-        </div>
-    )
-  }
-}
+          </Route>
+        </Switch>
+      </Router>
+    </div>
+  )
+};
+
+export default App;
