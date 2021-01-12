@@ -7,7 +7,7 @@ import AudioPlayer from 'react-h5-audio-player';
 
 
 class Photo extends PureComponent {
-  constructor(props) {
+  constructor( props) {
     super(props);
 
     this.state = {
