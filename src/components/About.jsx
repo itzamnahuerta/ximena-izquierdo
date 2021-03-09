@@ -11,13 +11,13 @@ export default function About () {
       </Link>
       <div className="artist-info">
         <Typewriter
+          options={{
+            delay:40
+          }}
           onInit={(typewriter) => {
           typewriter.typeString(`xime izquierdo ugaz is a South American non-binary multimedia artist/writer, curator, language justice worker and educator. They're currently based in Lima and live with their cat Ocean. They are the visual arts co-curator at Nat. Brut, co-organizer of QTPOC festival based in Peru, Cabritas Resistiendo as well as BODYHACK a mutual aid global party by and for trans & nb folks. Their first chapbook is titled Estoy Tristeza (No, Dear Magazine & Small Anchor Press, 2018).`)
-          .callFunction(() => {
-            console.log('String typed out!');
-          })
+
           .pauseFor(2500)
-          // .deleteAll()
           .start();
           }}
         />
