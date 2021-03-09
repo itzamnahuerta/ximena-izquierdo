@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bec10be61570160e8d33b07e93b62582",
+    "revision": "458b85c600bd8d943727a3a6a40bf80c",
     "url": "/index.html"
   },
   {
-    "revision": "64b48c15a8530c9ac122",
-    "url": "/static/css/main.18862ad5.chunk.css"
+    "revision": "350aabafd6260e8bf81b",
+    "url": "/static/css/main.c73a95db.chunk.css"
   },
   {
-    "revision": "4b94743d9a7152ef415a",
-    "url": "/static/js/2.2cfa2c4c.chunk.js"
+    "revision": "6c3ccf9f8ee63a69e4a5",
+    "url": "/static/js/2.8b833d9e.chunk.js"
   },
   {
-    "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/static/js/2.2cfa2c4c.chunk.js.LICENSE.txt"
+    "revision": "c64c486544348f10a6d6c716950bc223",
+    "url": "/static/js/2.8b833d9e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "64b48c15a8530c9ac122",
-    "url": "/static/js/main.0c167cc4.chunk.js"
+    "revision": "350aabafd6260e8bf81b",
+    "url": "/static/js/main.07c5f722.chunk.js"
   },
   {
     "revision": "2da695eeeb1e7e863336",
@@ -70,6 +70,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "67245f2af3e5a210a50d8d751a0422b6",
     "url": "/static/media/Fudge_at_her_shoot_Brooklyn_April_2019.67245f2a.mp4"
+  },
+  {
+    "revision": "9f732d4336460585d875a1b47282f373",
+    "url": "/static/media/Hermes-Bold.9f732d43.otf"
+  },
+  {
+    "revision": "1212e42465f6ecc97ef5202858fcc381",
+    "url": "/static/media/Hermes-Light.1212e424.otf"
   },
   {
     "revision": "ede2254696ea086ab00c52bfb141b4b1",

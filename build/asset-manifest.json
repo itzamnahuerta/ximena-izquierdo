@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.18862ad5.chunk.css",
-    "main.js": "/static/js/main.0c167cc4.chunk.js",
-    "main.js.map": "/static/js/main.0c167cc4.chunk.js.map",
+    "main.css": "/static/css/main.c73a95db.chunk.css",
+    "main.js": "/static/js/main.07c5f722.chunk.js",
+    "main.js.map": "/static/js/main.07c5f722.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c99ad947.js",
     "runtime-main.js.map": "/static/js/runtime-main.c99ad947.js.map",
-    "static/js/2.2cfa2c4c.chunk.js": "/static/js/2.2cfa2c4c.chunk.js",
-    "static/js/2.2cfa2c4c.chunk.js.map": "/static/js/2.2cfa2c4c.chunk.js.map",
+    "static/js/2.8b833d9e.chunk.js": "/static/js/2.8b833d9e.chunk.js",
+    "static/js/2.8b833d9e.chunk.js.map": "/static/js/2.8b833d9e.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.98fa7192b0ed3e172858884035d8f7c0.js": "/precache-manifest.98fa7192b0ed3e172858884035d8f7c0.js",
+    "precache-manifest.1575202927bcd16797b5567929ad4265.js": "/precache-manifest.1575202927bcd16797b5567929ad4265.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.18862ad5.chunk.css.map": "/static/css/main.18862ad5.chunk.css.map",
-    "static/js/2.2cfa2c4c.chunk.js.LICENSE.txt": "/static/js/2.2cfa2c4c.chunk.js.LICENSE.txt",
+    "static/css/main.c73a95db.chunk.css.map": "/static/css/main.c73a95db.chunk.css.map",
+    "static/js/2.8b833d9e.chunk.js.LICENSE.txt": "/static/js/2.8b833d9e.chunk.js.LICENSE.txt",
     "static/media/Akir_with_roses_for_Pink_Bandanazz_Brooklyn_April_2019.mp4": "/static/media/Akir_with_roses_for_Pink_Bandanazz_Brooklyn_April_2019.d10d0df4.mp4",
     "static/media/Alfie_in_the_corset_Brooklyn_March_2019.m4a": "/static/media/Alfie_in_the_corset_Brooklyn_March_2019.cabe6ffd.m4a",
     "static/media/Andi_after_the_protest_Brooklyn_November_2019.m4a": "/static/media/Andi_after_the_protest_Brooklyn_November_2019.c440c957.m4a",
     "static/media/Andi_on_the_couch_Punta_Negra_March_2020.m4a": "/static/media/Andi_on_the_couch_Punta_Negra_March_2020.1bfaf424.m4a",
-    "static/media/LandingPage.scss": "/static/media/tiempos.668475a5.otf",
+    "static/media/About.scss": "/static/media/tiempos.668475a5.otf",
     "static/media/Cristobal_as_Buffy_on_Halloween_October_2019.m4a": "/static/media/Cristobal_as_Buffy_on_Halloween_October_2019.6da0430e.m4a",
     "static/media/Djino,_fire_escape,_lip_gloss,_December_2019 (1).m4a": "/static/media/Djino,_fire_escape,_lip_gloss,_December_2019 (1).bf560eee.m4a",
     "static/media/Domingos_new_home_January_2020.m4a": "/static/media/Domingos_new_home_January_2020.a27f2604.m4a",
@@ -59,8 +59,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c99ad947.js",
-    "static/js/2.2cfa2c4c.chunk.js",
-    "static/css/main.18862ad5.chunk.css",
-    "static/js/main.0c167cc4.chunk.js"
+    "static/js/2.8b833d9e.chunk.js",
+    "static/css/main.c73a95db.chunk.css",
+    "static/js/main.07c5f722.chunk.js"
   ]
 }
