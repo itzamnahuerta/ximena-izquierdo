@@ -1,4 +1,4 @@
-import React from 'react';
+import React , {useState} from 'react';
 import '../styles/LandingPage.scss';
 import artistImg from '../assets/artist-img/xime_retrato.PNG'
 import {Link} from 'react-router-dom';
@@ -8,7 +8,24 @@ import ReactImageAppear from 'react-image-appear';
 
 
 
- const LandingPage = (props) =>  {
+ function LandingPage() {
+   
+  // landing page "read more" btn toggle
+  const [readMore, setReadMore] = useState(false);
+  const toggleReadMore = () => setReadMore(!readMore);
+
+  // landing page "language" btn toggle
+  const [lang, setLang] = useState('en')
+
+  const toEs = () => {
+    setLang('es')
+  }
+  
+  const toEng = () => {
+    setLang('en')
+  }
+
+
   return (
     <div className="page-container">
       <div className="marquee">
@@ -80,7 +97,7 @@ import ReactImageAppear from 'react-image-appear';
 
           <div className="f-item navigation-container"> 
             <div>
-              <button className="read-more opt-btn" onClick={props.toggleReadMore} > 
+              <button className="read-more opt-btn" onClick={toggleReadMore} > 
               <p> read more </p>
               </button>
             </div>
@@ -95,8 +112,8 @@ import ReactImageAppear from 'react-image-appear';
           </div>
 
 
-          <div className={props.readMore ? "read-more-container-open" : "read-more-container-closed"}> 
-          {props.lang === "es" && (
+          <div className={readMore ? "read-more-container-open" : "read-more-container-closed"}> 
+          {lang === "es" && (
             <div> 
             De peque, mi madre no dejaba que nadie se sentara en mi cama. Decía que era un lugar sagrado. Cuando llegaban mis amigues, teníamos que sentarnos en la sala desde donde ella nos podía ver. A medida que crecía, me di cuenta de lo diferente que nos sentíamos acerca de lo sagrado. Ya de adolescente y en busca de espejos, buscando familia, viví en muchos hogares. Durante mucho tiempo, fui demasiado tímide para tomar fotografías de las personas que me rodeaban. Tomé muchas fotos de nuestras cosas, la sala que compartía con mis roomates, el baño donde nos preparamos para enfrentar un mundo que nos odiaba, cocinas, camas, ventanas.
             <br/> 
@@ -113,7 +130,7 @@ import ReactImageAppear from 'react-image-appear';
 
             )}
 
-            {props.lang === "en" && (
+            {lang === "en" && (
             <div> 
             <div>
             Growing up my mom wouldn’t let anyone sit on my bed. She said it was a sacred place. When friends came over we would have to sit in the living room with her watching nearby. As I grew, it became clear to me how differently we felt about sacredness. As a teenager looking for mirrors, searching for family, I lived in many homes. For a long time, I was too shy to take photographs of the people around me. I took lots of pictures of our things, the living room my roommates and I shared, the bathroom where we got ready to face a world that hated us, kitchens, beds, windows. 
@@ -135,11 +152,11 @@ import ReactImageAppear from 'react-image-appear';
             <div> 
             <span 
             className="lang" 
-            onClick={props.toEng} > EN </span>
+            onClick={toEng} > EN </span>
             | 
             <span 
             className="lang" 
-            onClick={props.toEs}> ES </span>
+            onClick={toEs}> ES </span>
             </div> 
 
           </div>

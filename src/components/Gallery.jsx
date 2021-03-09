@@ -1,69 +1,64 @@
-import React, { Component } from 'react';
-import Photo from './Photo'; 
-import { LazyLoadImage, trackWindowScroll } 
-  from 'react-lazy-load-image-component';
+import React, { useEffect, useState } from 'react';
 import '../styles/Gallery.scss';
 import data from '../assets/data/data';
 
-class Gallery extends Component {
-  constructor() {
-    super();
+// components
+import Photo from './Photo'; 
 
-    this.state = {
-      data: data,
-      isPhotoClicked: false,
-      photo: {}
-    }
-  }
+// libraries
+import ReactImageAppear from 'react-image-appear';
+import {Link, useLocation} from 'react-router-dom';
+import { RestaurantRounded } from '@material-ui/icons';
 
-  handlePhoto = (photoData) => {
-    this.setState({isPhotoClicked:true, photo: photoData})
-  }
 
-  render() {
-    const {scrollPosition} = this.props;
+export default function Gallery () {
+  let location = useLocation();
+  console.log("tryan see some change",location)
+  const [photosData, setPhotosData] = useState({data});
 
-    let photos = this.state.data;
-    let photoArr = [];
-    if (photos) {
-      photos.map( (photo, id) => {
-        photoArr.push(
-          <div 
-            key={id} 
-            className={photo.className} 
-            onClick={() => {this.handlePhoto(photo)}}
+
+  const photos = photosData.data;
+  let photoArr = [];
+  if (photos) {
+  photos.map( (photo, id) => {
+    photoArr.push(
+        <div 
+          key={id} 
+          className={photo.className} 
+          // onClick={() => {this.handlePhoto(photo)}}
           >
-          <LazyLoadImage 
-            isPhotoClicked={this.state.isPhotoClicked}
-            alt={photo.portrait}
-            src={photo.imgUrl}
-            effect="opacity"
+        <Link 
+          to={{
+            pathname: `/img/${id}`,
+            state: { background: location }
+          }}
+        >
+        <ReactImageAppear 
+          alt={photo.portrait}
+          src={photo.imgUrl}
+          animation="fadeIn"
+          animationDuration="1s"
+          showLoader={false}
           />
-          </div>
-        )
-      });
-    }
-
-    if(this.state.isPhotoClicked === true) {
-      return(
-        <Photo
-          showPhotoInfo={this.state.isPhotoClicked}
-          handlephoto={this.handlePhoto}
-          data={this.state.photo} 
-          scrollPosition={scrollPosition}
-        />
-      )
-    } else {
-      return (
-        <div className="gallery-parent-container">
-          {!this.state.isPhotoClicked && (
-            photoArr
-          )}
+        </Link>
         </div>
-      )
-    }
+
+    )
+  });
   }
+//   function renderPhotos() {
+//     photosData.data.map((photo, id) => {
+//       console.log(photo.portrait) 
+//       return (
+//       <h3 key={id}> {photo.portrait } works! </h3>
+//       );
+//     })
+//  }
+
+  return(
+    <div className="gallery-parent-container">
+      {photoArr}
+    </div>
+  )
 }
 
-
-export default trackWindowScroll(Gallery);

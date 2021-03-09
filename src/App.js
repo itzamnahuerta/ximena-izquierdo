@@ -1,54 +1,44 @@
-import React, {useState} from 'react';
-import './App.css';
+import React from 'react';
+
 import {
-  BrowserRouter as Router,
   Switch,
   Route,
+  useLocation
 } from "react-router-dom";
 
+
 // pages 
-import Main from './components/Main'; // update to home component
 import LandingPage from './components/LandingPage';
+import Home from './components/Home'; // update to home component
+import About from './components/About'; 
+import Photo from './components/Photo';
 
 
 function App() {
-  // landing page "read more" btn toggle
-  const [readMore, setReadMore] = useState(false);
-  const toggleReadMore = () => setReadMore(!readMore);
-
-  // landing page "language" btn toggle
-  const [lang, setLang] = useState('en')
-
-  const toEs = () => {
-    setLang('es')
-  }
-  
-  const toEng = () => {
-    setLang('en')
-  }
+  let location = useLocation();
+  let background = location.state && location.state.background;
 
   return(
     <div className="App">
-      <Router>
-        <Switch>
-          <Route path="/gallery">
-          </Route>
+      <Switch  location={background || location}>
+        <Route path="/home">
+          <Home />
+        </Route>
 
-          <Route path="/home">
-            <Main />
-          </Route>
+        <Route path="/about">
+          <About />
+        </Route>
+        
+        <Route path="/img/:id" children={<Photo />} />
 
-          <Route path="/">
-            <LandingPage 
-              toggleReadMore={toggleReadMore}
-              readMore={readMore}
-              lang={lang}
-              toEs={toEs}
-              toEng={toEng}
-            />
-          </Route>
-        </Switch>
-      </Router>
+        <Route path="/">
+          <LandingPage 
+
+          />
+        </Route>
+        <Route>{'404'}</Route>
+      </Switch>
+      {background && <Route path="/img/:id" children={<Photo />} />}
     </div>
   )
 };

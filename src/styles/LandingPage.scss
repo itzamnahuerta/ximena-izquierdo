@@ -1,7 +1,5 @@
 @import './Fonts.scss';
 
-
-
 // Scrollbar
 ::-webkit-scrollbar {
   width: 0;
@@ -9,7 +7,6 @@
   position: absolute;
   z-index: -99;
 }
-
 
 // -------------------------------
 @keyframes marquee {
@@ -102,7 +99,7 @@
   // Small devices (landscape phones, less than 768px)
   h1 {
     font-family: Whyte-Inktrap-Medium;
-    text-transform: uppercase;
+    text-transform: lowercase;
     line-height: 1em;
     font-size: 15pt;
   }
@@ -161,7 +158,7 @@
     display: grid;
     grid-gap: 0;
     grid-template-columns:minmax(15px, 50px) 200px minmax(15px, 50px) ;
-    grid-template-rows: minmax(20px,40px) 200px minmax(20px,40px);
+    grid-template-rows: minmax(20px,40px) 180px minmax(20px,40px);
     grid-template-areas: 
       ". se ."
       "asi xime que"
@@ -277,7 +274,7 @@
     margin-bottom: 20px;
     .artist-desc {
       display: inline-block;
-      border-top: 9px solid black;
+      border-top: 2px solid black;
       padding: 1em;
       font-size: 8pt;
     }
@@ -328,22 +325,16 @@
   }
   .artist-img-container {
     display: flex;
-    // align-items: center;
-    // justify-content: flex-end;
-    // margin-top: 2em;
-    // margin-right: 1em;
-
     .artist-img {
-      // pointer-events: none;
       width: 220px;
     }
   }
-  p {
-    font-family: Univers-Next-Regular;
-  }
+  // p {
+  //   font-family: Univers-Next-Regular;
+  // }
   .read-more-container-open {
     // background:red;
-    margin-top: 1em;
+    margin-top: 1.8em;
     // border: 2px solid red;
     position:relative;
     bottom:-1200px;
@@ -357,7 +348,8 @@
     animation-timing-function:ease-out;
 
     line-height: 1.7;
-    font-size: 12pt;
+    font-size: 10pt;
+    font-family: HermesLight;
     .lang {
       cursor: pointer;
     }
@@ -375,7 +367,7 @@
   // Medium devices (tablets, 768px and up)
   h1 {
     font-family: Whyte-Inktrap-Medium;
-    text-transform: uppercase;
+    text-transform: lowercase;
     line-height: 1em;
     font-size: 25pt;
   }
@@ -421,14 +413,18 @@
 
   .grid-main-section {
     // title word fragments bordering portrait 
-
+    h1 {
+      font-family: Whyte-Inktrap-Medium;
+      text-transform: lowercase;
+      font-size: 3vw;
+    }
     // border: 3px solid black;
     width: 600px;
     align-self: center;
     display: grid;
     grid-gap: 0;
     grid-template-columns:minmax(70px, 192px) 384px minmax(70px, 192px) ;
-    grid-template-rows: minmax(20px,70px) 500px minmax(20px,70px);
+    grid-template-rows: minmax(20px,70px) 450px minmax(20px,70px);
     grid-template-areas: 
       ". se ."
       "asi xime que"
@@ -520,7 +516,7 @@
     flex-direction: column;
     max-width: 100%;
     // border: 2px solid red;
-    padding: 2em;
+    padding: 1em;
     flex:1;
     // .f-item{
     //   border: 2px solid red;
@@ -530,6 +526,11 @@
       margin-top: 4%;
       font-size:3.3vw;
       letter-spacing: 10px;
+      h1 {
+        font-family: Whyte-Inktrap-Medium;
+        text-transform: lowercase;
+        font-size: 3vw;
+      }
     }
     .artist-container {
       margin-top: -1%;
@@ -623,9 +624,9 @@
 
 @media (min-width: 992px) and (max-width: 1199.98px) { 
   // Large devices (desktops, 992px and up)
-  h1 {
+  .page-container > h1 {
     font-family: Whyte-Inktrap-Medium;
-    text-transform: uppercase;
+    text-transform: lowercase;
     font-size: 3vw;
   }
 
@@ -670,14 +671,18 @@
 
   .grid-main-section {
     // title word fragments bordering portrait 
-
+    h1 {
+      font-family: Whyte-Inktrap-Medium;
+      text-transform: lowercase;
+      font-size: 3vw;
+    }
     // border: 3px solid black;
     width: 600px;
     align-self: center;
     display: grid;
     grid-gap: 0;
     grid-template-columns:minmax(15px, 50px) 500px minmax(15px, 50px) ;
-    grid-template-rows: minmax(20px,70px) 500px minmax(20px,70px);
+    grid-template-rows: minmax(20px,70px) 450px minmax(20px,70px);
     grid-template-areas: 
       ". se ."
       "asi xime que"
@@ -772,10 +777,9 @@
     color: black;
     display:flex;
     flex-direction: column;
-    // min-height: 90vh;
     max-width: 100%;
-    // border: 2px solid red;
-    padding: 2em;
+    // border: 5px solid red;
+    padding: 1em;
     flex:1;
     // .f-item{
     //   // border: 2px solid red;
@@ -786,10 +790,12 @@
     .title-container {
       align-self: center;
       margin-top: 4%;
-      // flex-shrink: 4;
-      // font-size:2.3vw;
       letter-spacing: 10px;
-      // color:black;
+      h1 {
+        font-family: Whyte-Inktrap-Medium;
+        text-transform: lowercase;
+        font-size: 3vw;
+      }
     }
     .artist-container {
       margin-top: -1%;
@@ -890,7 +896,7 @@
   // Extra large devices (large desktops, 1200px and up)
   h1 {
     font-family: Whyte-Inktrap-Medium;
-    text-transform: uppercase;
+    text-transform: lowercase;
     font-size: 3vw;
   }
 
@@ -935,14 +941,18 @@
 
   .grid-main-section {
     // title word fragments bordering portrait 
-
+    h1 {
+      font-family: Whyte-Inktrap-Medium;
+      text-transform: lowercase;
+      font-size: 3vw;
+    }
     // border: 3px solid black;
     width: 600px;
     align-self: center;
     display: grid;
     grid-gap: 0;
     grid-template-columns:minmax(15px, 50px) 500px minmax(15px, 50px) ;
-    grid-template-rows: minmax(20px,70px) 500px minmax(20px,70px);
+    grid-template-rows: minmax(20px,70px) 450px minmax(20px,70px);
     grid-template-areas: 
       ". se ."
       "asi xime que"
@@ -1037,16 +1047,10 @@
     color: black;
     display:flex;
     flex-direction: column;
-    // min-height: 90vh;
     max-width: 100%;
     // border: 2px solid red;
-    padding: 2em;
+    padding: 1em;
     flex:1;
-    // .f-item{
-    //   // border: 2px solid red;
-    // }
-    
-
 
     .title-container {
       align-self: center;

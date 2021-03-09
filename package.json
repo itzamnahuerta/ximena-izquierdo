@@ -26,7 +26,8 @@
     "react-sound": "^1.2.0",
     "react-use-audio-player": "^1.2.0",
     "react-visibility-sensor": "^5.1.1",
-    "sass": "^1.26.10"
+    "sass": "^1.26.10",
+    "typewriter-effect": "^2.17.0"
   },
   "scripts": {
     "start": "react-scripts start",
