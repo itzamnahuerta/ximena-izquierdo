@@ -130,7 +130,7 @@
   .marquee {
     // el museo headline marquee 
     background-color: white;
-    padding: 1rem 0;
+    padding: .7rem 0;
     color: black;
     border-bottom: 2px dashed black;
     }
@@ -149,6 +149,7 @@
       animation: marquee 20s linear infinite;
       font-family: HermesLight;
       text-transform: lowercase;
+      font-size: 8pt;
     }
   }
   .grid-main-section {
