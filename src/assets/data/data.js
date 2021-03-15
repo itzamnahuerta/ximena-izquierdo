@@ -140,7 +140,7 @@ const data = [
     portrait: 'Seraah between the Matriarchs',
     className:"c3-r3",
 		location: 'Boston, Massachusetts',
-		date: 'November, 2010',
+		date: 'November, 2019',
 		imgUrl: 'https://res.cloudinary.com/chilesonsal/image/upload/v1603510285/portraits/Seraah_between_the_matriarchs_Boston_November_2010_wccwmh.png',
 		audioUrl: seraah_between_matriarchs_audio,
 		personalNote: `There I am between the pillars of my foundation, a once lost boy sitting calmly at the piano expressing my search and attainment of manhood through the force of syntax, voice, and creative ingenuity. My whole life I've turned the detritus of life into gold; divine masculine. I used to think, “my childhood was rotten, you wouldn’t want to be me, you wouldn’t want my life” until I realized the function of trials and tribulations, I realized the value of falling flat on your face only to get up and move on another 10 years, then another 10 more, and then some more until I merged with music, performing the reforming of my ROYGBIV refractions into one ominous beam of light. The pain of not having a father, of not understanding why I always felt out of place, of feeling so divorced from my sense of self ceased to exist when I realized that everything I needed to express nature had already been given to me. The Matriarch is my foundation, and from there I've built my legacy through art and deed. I express evolution because  Nature Allows Evolution.`
@@ -232,7 +232,7 @@ const data = [
     Here I am, on the rooftop of my friend’s apartment overlooking the place I was born, in the fog of a recent break up, somewhere between grief and relief, feeling seen as I see myself for the first time in a long time. Thank God for friends who see you and show you who you are; friends who reflect you back to yourself.`
 	},
 	{
-    portrait: 'Prince reaching Lima',
+    portrait: 'Prince reaching',
     className:"c7-r2",
 		location: 'Magdalena del Mar, Lima',
 		date: 'April, 2020',
@@ -255,7 +255,7 @@ const data = [
 		date: 'October, 2019',
 		imgUrl: 'https://res.cloudinary.com/chilesonsal/image/upload/v1603510237/portraits/Cristobal_as_Buffy_on_Halloween_October_2019_komqly.png',
 		audioUrl: cristobal_as_buffy_audio,
-		personalNote: `There's a lot of possibilit<br/>
+		personalNote: `There's a lot of possibility<br/>
     And a lot of leg, I might add *wink*<br/>
     In this person's field of vision<br/>
     A memory of a precipice somewhere<br/>
@@ -316,7 +316,7 @@ const data = [
     `
 	},
 	{
-    portrait: 'Keioui Peanut Stew',
+    portrait: `keioui's peanut stew`,
     className:"c9-r3",
 		location: 'Brooklyn, New York',
 		date: 'November, 2018',
@@ -439,7 +439,7 @@ const data = [
     Eres hermosa. Te beso y miro todos los días pa recordarte que estoy contigo, que estoy conmigo, yendo bien apachurradas y calientitas, haciendonos compañía en éste mundo ❤ te amo San `
 	},
 	{
-    portrait: 'Nancy cigarette Cherry Clove',
+    portrait: 'nancy with cigarette in cherry grove',
     className:"c14",
 		location: 'Fire Island, New York',
 		date: 'May, 2019',
@@ -462,7 +462,7 @@ const data = [
 		imgUrl: 'https://res.cloudinary.com/chilesonsal/image/upload/v1603510228/portraits/Edua_after_their_performance_March_2019_qfuqj2.png',
 		audioUrl: edua_after_performance_audio,
 		personalNote: `<br/><br/>
-		"eduaaaaa
+		eduaaaaa
     Esta es una edua DECIDIDA. <br/>
     
     A esta edua se le desplomó el suelo <br/><br/>
@@ -535,7 +535,7 @@ const data = [
 		imgUrl: 'https://res.cloudinary.com/chilesonsal/image/upload/v1603510229/portraits/Andi_on_the_couch___Punta_Negra_March_2020_jxpdkf.png',
 		audioUrl: andi_on_couch_audio,
 		personalNote:
-			'Here I am months later, right after quitting that shitty non-profit job, chilling at an airbnb in Punta Negra, Peru. this was in early March, as corona began to spread and countries began to close their borders. this girl definitely had no idea what was to come. '
+			'Here I am months later, right after quitting that shitty non-profit job, chilling at an airbnb in Punta Negra, Peru. This was in early March, as corona began to spread and countries began to close their borders. This girl definitely had no idea what was to come. '
 	},
 	{
     portrait: 'Jess and Ocean on my purple sheets',
